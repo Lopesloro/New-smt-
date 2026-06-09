@@ -1,11 +1,7 @@
-import { Header } from "@/components/site/Header";
-import { Hero } from "@/components/site/Hero";
-import { Featured } from "@/components/site/Featured";
-import { Showroom } from "@/components/site/Showroom";
-import { YamahaShowroom } from "@/components/site/YamahaShowroom";
-import { Features } from "@/components/site/Features";
-import { Contact } from "@/components/site/Contact";
-import { Footer } from "@/components/site/Footer";
+import { Header } from "@/components/smts/Header";
+import { Hero } from "@/components/smts/Hero";
+import { Catalog } from "@/components/smts/Catalog";
+import { Footer } from "@/components/smts/Footer";
 import { AssistantWidget } from "@/components/site/AssistantWidget";
 
 function App() {
@@ -14,11 +10,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Featured />
-        <Showroom />
-        <YamahaShowroom />
-        <Features />
-        <Contact />
+        <Catalog />
       </main>
       <Footer />
       <AssistantWidget />

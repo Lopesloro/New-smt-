@@ -1,0 +1,3123 @@
+{
+  "brand": "SMT Solutions",
+  "short": "SMTS",
+  "families": [
+    {
+      "id": "surface-mounters",
+      "name": "Surface Mounters",
+      "machines": [
+        {
+          "family": "surface-mounters",
+          "slug": "yrm20dl",
+          "model": "YRM20DL",
+          "tagline": "Super High Efficiency Dual Lane Modular",
+          "description": "Versão dual-lane do YRM20 e topo de linha das montadoras Yamaha. Pode operar em modo paralelo (dois PCBs diferentes simultâneos), alternado (um PCB em duas lanes) ou híbrido. Plataforma YR Series com cabeças intercambiáveis RM, HM e FM. Precisão de ±0,015mm e capacidade de até 120.000 CPH.",
+          "image": "https://global.yamaha-motor.com/business/smt/mounter/img/yrm20dl.jpg",
+          "quick": [
+            {
+              "label": "Capacidade máxima",
+              "value": "120.000 CPH (RM head)"
+            },
+            {
+              "label": "Precisão",
+              "value": "±0,015mm Cpk≥1.0"
+            },
+            {
+              "label": "Componentes",
+              "value": "0201mm a 55×100mm"
+            },
+            {
+              "label": "Largura PCB",
+              "value": "até 610mm"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Especificações por tipo de cabeça",
+              "headers": [
+                "Especificação",
+                "RM Head",
+                "HM Head",
+                "FM Head"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Bicos por unidade de cabeça",
+                    "tone": ""
+                  },
+                  {
+                    "text": "18",
+                    "tone": ""
+                  },
+                  {
+                    "text": "10",
+                    "tone": ""
+                  },
+                  {
+                    "text": "5",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Componente mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "0201mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "0201mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "03015mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Componente máximo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "12×12mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "55×100mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "55×100mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Altura máxima de componente",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≤6,5mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≤15mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≤30mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Capacidade de montagem",
+                    "tone": ""
+                  },
+                  {
+                    "text": "120.000 CPH",
+                    "tone": ""
+                  },
+                  {
+                    "text": "100.000 CPH",
+                    "tone": ""
+                  },
+                  {
+                    "text": "35.000 CPH",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Precisão de montagem",
+                    "tone": ""
+                  },
+                  {
+                    "text": "±0,015mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "±0,015mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "±0,035mm",
+                    "tone": ""
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YRM20DL"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Plataforma YR Series",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Configuração dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Modo paralelo (2 PCBs simultâneos)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Modo alternado",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Modo híbrido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça RM (super alta velocidade rotativa)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça HM (in-line uso geral)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça FM (componentes irregulares)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Componentes 0201mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Componentes 03015mm (com FM head)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Force control (FM head)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Auto Push-Up Pin Exchange",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Suporta die/wafer",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Tipos de componentes (carriage)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "128",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Tipos de componentes (fixo)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "128",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Tipos de componentes em bandejas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "60",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensão PCB (single)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50 a L810×W610mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensão PCB (dual)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50 a L810×W330mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "3-Phase AC 200/208/220/240/380/400/416V ±10% 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.374 × W2.102 × H1.445 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 2.550 kg (somente unidade principal)",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "family": "surface-mounters",
+          "slug": "yrm20",
+          "model": "YRM20",
+          "tagline": "Premium High-efficiency Modular",
+          "description": "Montadora premium de alta eficiência da plataforma YR Series. Configuração single-lane com dual stage interno, permitindo processar um PCB maior ou dois PCBs menores em sequência. Suporta cabeças intercambiáveis RM, HM e FM para total flexibilidade. Opção de conversão para dual-lane disponível.",
+          "image": "https://global.yamaha-motor.com/business/smt/mounter/img/yrm20.jpg",
+          "quick": [
+            {
+              "label": "Capacidade máxima",
+              "value": "115.000 CPH (RM head, 2-beam)"
+            },
+            {
+              "label": "Precisão",
+              "value": "±0,025mm Cpk≥1.0"
+            },
+            {
+              "label": "Componentes",
+              "value": "0201mm a 55×100mm"
+            },
+            {
+              "label": "Largura PCB",
+              "value": "até 510mm (opc. 810mm)"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Especificações por tipo de cabeça",
+              "headers": [
+                "Especificação",
+                "RM Head",
+                "HM Head",
+                "FM Head"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Bicos por unidade de cabeça",
+                    "tone": ""
+                  },
+                  {
+                    "text": "18",
+                    "tone": ""
+                  },
+                  {
+                    "text": "10",
+                    "tone": ""
+                  },
+                  {
+                    "text": "5",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Componente mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "0201mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "0201mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "03015mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Componente máximo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "12×12mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "55×100mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "55×100mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Altura máxima de componente",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≤6,5mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≤15mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≤30mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Capacidade (2-beam)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "115.000 CPH",
+                    "tone": ""
+                  },
+                  {
+                    "text": "98.000 CPH",
+                    "tone": ""
+                  },
+                  {
+                    "text": "35.000 CPH",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Capacidade (1-beam)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "57.500 CPH",
+                    "tone": ""
+                  },
+                  {
+                    "text": "49.000 CPH",
+                    "tone": ""
+                  },
+                  {
+                    "text": "17.500 CPH",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Precisão de montagem",
+                    "tone": ""
+                  },
+                  {
+                    "text": "±0,025mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "±0,025mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "±0,035mm",
+                    "tone": ""
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YRM20"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Plataforma YR Series",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual stage interno",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça RM (super alta velocidade rotativa)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça HM (in-line uso geral)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça FM (componentes irregulares)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Componentes 0201mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Componentes 03015mm (com FM head)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Force control (FM head)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Auto Push-Up Pin Exchange",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Suporta die/wafer",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "PCB (1-beam, std)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50 a L510×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB (1-beam, opcional)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "até L810×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB (2-beam, dual stage — 1 PCB)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "até L810×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB (2-beam, dual stage — 2 PCBs)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "até L380×W510mm cada",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "3-Phase AC 200-416V ±10% 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.374 × W1.948 × H1.445 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso (2-beam)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 2.250 kg",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso (1-beam)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 2.150 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "family": "surface-mounters",
+          "slug": "yrm10",
+          "model": "YRM10",
+          "tagline": "Compact High-Speed Modular",
+          "description": "Montadora compacta da plataforma YR Series, ideal para linhas com menor volume ou espaço físico reduzido. Cabeça HM de 10 bicos com capacidade de 52.000 CPH. Footprint reduzido com apenas 1.230 kg, sem abrir mão da qualidade de montagem Yamaha.",
+          "image": "https://global.yamaha-motor.com/business/smt/mounter/img/yrm10.jpg",
+          "quick": [
+            {
+              "label": "Capacidade máxima",
+              "value": "52.000 CPH (HM head)"
+            },
+            {
+              "label": "Precisão",
+              "value": "±0,035mm Cpk≥1.0"
+            },
+            {
+              "label": "Componentes",
+              "value": "0201mm a 100×55mm"
+            },
+            {
+              "label": "Peso",
+              "value": "Aprox. 1.230 kg"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YRM10"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Plataforma YR Series",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça HM (in-line uso geral)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça RM (super alta velocidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça FM (componentes irregulares)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Componentes 0201mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Componentes 03015mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Force control",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Auto Push-Up Pin Exchange",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Footprint compacto",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Suporta die/wafer",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "PCB (padrão)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50 a L510×W460mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB (opcional)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "até L950mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Componentes",
+                    "tone": ""
+                  },
+                  {
+                    "text": "0201mm a L100×W55mm, altura ≤15mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Tipos (carretel, máx.)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "96",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Tipos (bandeja, com sATS15R)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "15",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "3-Phase AC 200-416V ±10% 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.254 × W1.440 × H1.445 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 1.230 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solder-printers",
+      "name": "Solder-Paste Printers",
+      "machines": [
+        {
+          "family": "solder-printers",
+          "slug": "yrp10e",
+          "model": "YRP10e",
+          "tagline": "Solder-Paste Printer Entry-Level",
+          "description": "Impressora de pasta de solda entry-level da plataforma YR Series. Equipada com a exclusiva cabeça 3S (Swing Single Squeegee) da Yamaha, oferece precisão de μ±6σ ±30μm com tempo de ciclo de apenas 6,0 segundos. Solução ideal para quem busca qualidade de impressão Yamaha com custo de investimento mais acessível.",
+          "image": "https://global.yamaha-motor.com/business/smt/printer/yrp10e/img/main_img.jpg",
+          "quick": [
+            {
+              "label": "Precisão de impressão",
+              "value": "μ±6σ ±30μm Cpk≥2.0"
+            },
+            {
+              "label": "Tempo de ciclo (core)",
+              "value": "6,0 segundos"
+            },
+            {
+              "label": "PCB máximo",
+              "value": "510×510mm"
+            },
+            {
+              "label": "Cabeça",
+              "value": "3S (Swing Single Squeegee)"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YRP10e"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Plataforma YR Series",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça 3S (Swing Single Squeegee)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Tempo de ciclo 6 segundos (core)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Setup/changeover automático completo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Precisão de impressão",
+                    "tone": ""
+                  },
+                  {
+                    "text": "μ±6σ ±30μm Cpk≥2.0 (CeTaQ)",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB máximo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L510×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Tempo de ciclo (core, sem impressão)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "6,0 segundos",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Stencils compatíveis",
+                    "tone": ""
+                  },
+                  {
+                    "text": "750×750 / 750×650 / 736×736 / 650×550 / 600×550 / 584×584 / 550×650 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Single-phase AC 200/208/220/230 ±20V 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.640 × W1.840 × H1.525 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 1.710 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "family": "solder-printers",
+          "slug": "yrp10",
+          "model": "YRP10",
+          "tagline": "Solder-Paste Printer Premium",
+          "description": "Impressora de pasta de solda premium da plataforma YR Series. Equipada com a cabeça 3S (Swing Single Squeegee) e câmera de alta resolução para verificação automática de stencil. Oferece precisão de μ±6σ ±16μm com opção de operação dual-lane. Setup e changeover automatizados reduzem o tempo de troca de produto.",
+          "image": "https://global.yamaha-motor.com/business/smt/printer/yrp10/img/main_img.jpg",
+          "quick": [
+            {
+              "label": "Precisão de impressão",
+              "value": "μ±6σ ±16μm Cp≥2.0"
+            },
+            {
+              "label": "Tempo de ciclo (core)",
+              "value": "6,0 segundos"
+            },
+            {
+              "label": "PCB máximo",
+              "value": "510×510mm"
+            },
+            {
+              "label": "Cabeça",
+              "value": "3S (Swing Single Squeegee)"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YRP10"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Plataforma YR Series",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeça 3S (Swing Single Squeegee)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Tempo de ciclo 6 segundos (core)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Verificação automática de stencil",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Setup/changeover automático",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Precisão de impressão",
+                    "tone": ""
+                  },
+                  {
+                    "text": "μ±6σ ±16μm Cp≥2.0 (CeTaQ)",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB máximo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L510×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Tempo de ciclo (core, sem impressão)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "6,0 segundos",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Stencils compatíveis",
+                    "tone": ""
+                  },
+                  {
+                    "text": "750×750 / 750×650 / 736×736 / 650×550 / 600×550 / 584×584 / 550×650 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Single-phase AC 200/208/220/230 ±20V 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.640 × W1.840 × H1.525 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 1.750 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "family": "solder-printers",
+          "slug": "ycp10",
+          "model": "YCP10",
+          "tagline": "Solder-Paste Printer Compact",
+          "description": "Impressora de pasta de solda compacta com tecnologia dual squeegee e câmera de inspeção integrada. Precisão de 6σ ±0,010mm e tempo de ciclo de 13,5 segundos. Modelo com footprint reduzido para linhas com espaço limitado. Sucessor sugerido: YRP10e com maior velocidade e plataforma YR Series.",
+          "image": "https://global.yamaha-motor.com/business/smt/printer/ycp10/img/main_img.jpg",
+          "quick": [
+            {
+              "label": "Precisão de impressão",
+              "value": "6σ ±0,010mm"
+            },
+            {
+              "label": "Tempo de ciclo (core)",
+              "value": "13,5 segundos"
+            },
+            {
+              "label": "PCB máximo",
+              "value": "460×360mm"
+            },
+            {
+              "label": "Squeegee",
+              "value": "Dual squeegee"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YCP10"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Plataforma YR Series",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual squeegee",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Câmera de inspeção integrada",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Setup/changeover automático",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Precisão de impressão",
+                    "tone": ""
+                  },
+                  {
+                    "text": "6σ ±0,010mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB máximo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L460×W360mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Tempo de ciclo (core, sem impressão)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "13,5 segundos",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Single-phase AC 200/220/230 ±10% 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.050 × W1.600 × H1.400 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 850 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dispensers",
+      "name": "Dispensers",
+      "machines": [
+        {
+          "family": "dispensers",
+          "slug": "yrm-d",
+          "model": "YRM-D",
+          "tagline": "High-Speed Dispenser",
+          "description": "Dispenser de alta velocidade da plataforma YR Series. Equipado com 2 ou 3 cabeças dispensadoras intercambiáveis, permite aplicação de cola, pasta de solda, underfill e outros fluidos com velocidade de 0,07 segundos por shot e precisão de ±0,05mm. Compatível com Auto Push-Up Pin Replacement para troca automática de pinos de suporte.",
+          "image": "https://global.yamaha-motor.com/business/smt/dispenser/yrm-d/img/main_img.jpg",
+          "quick": [
+            {
+              "label": "Velocidade de dispense",
+              "value": "0,07 s/shot"
+            },
+            {
+              "label": "Precisão",
+              "value": "±0,05mm"
+            },
+            {
+              "label": "Configuração de cabeças",
+              "value": "2 ou 3 cabeças"
+            },
+            {
+              "label": "PCB máximo",
+              "value": "510×510mm"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YRM-D"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Plataforma YR Series",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "2 cabeças dispensadoras",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "3 cabeças dispensadoras",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cabeças intercambiáveis",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Auto Push-Up Pin Replacement",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Câmera de reconhecimento de PCB",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Velocidade de dispense",
+                    "tone": ""
+                  },
+                  {
+                    "text": "0,07 s/shot",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Precisão de posicionamento",
+                    "tone": ""
+                  },
+                  {
+                    "text": "±0,05mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB máximo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L510×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Número de cabeças",
+                    "tone": ""
+                  },
+                  {
+                    "text": "2 (padrão) / 3 (opcional)",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "3-Phase AC 200-416V ±10% 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.254 × W1.440 × H1.445 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 1.300 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inspection",
+      "name": "Inspection Systems",
+      "machines": [
+        {
+          "family": "inspection",
+          "slug": "yri-v",
+          "model": "YRi-V",
+          "tagline": "3D Automated Optical Inspection",
+          "description": "Sistema de inspeção óptica automática 3D topo de linha da Yamaha. Câmera superior de 12MP ou 25MP com 8 projetores de luz estruturada para medição de altura, combinada com câmera de ângulo 4-direction de 20MP para detecção de defeitos laterais. Biblioteca de componentes com geração automática por IA e operação dual-lane opcional.",
+          "image": "https://global.yamaha-motor.com/business/smt/aoi/yri-v/img/main_img.jpg",
+          "quick": [
+            {
+              "label": "Câmera superior",
+              "value": "12MP ou 25MP"
+            },
+            {
+              "label": "Projetores 3D",
+              "value": "8 projetores luz estruturada"
+            },
+            {
+              "label": "Câmera lateral",
+              "value": "4-angle 20MP"
+            },
+            {
+              "label": "PCB máximo",
+              "value": "510×510mm (opc. dual-lane)"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Configurações de câmera",
+              "headers": [
+                "Especificação",
+                "12MP",
+                "25MP"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Resolução câmera superior",
+                    "tone": ""
+                  },
+                  {
+                    "text": "12 megapixels",
+                    "tone": ""
+                  },
+                  {
+                    "text": "25 megapixels",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Projetores de luz estruturada",
+                    "tone": ""
+                  },
+                  {
+                    "text": "8",
+                    "tone": ""
+                  },
+                  {
+                    "text": "8",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Câmera lateral (4-angle)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "20MP",
+                    "tone": ""
+                  },
+                  {
+                    "text": "20MP",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Detecção de altura 3D",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Inspeção de componentes finos",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Padrão",
+                    "tone": "partial"
+                  },
+                  {
+                    "text": "Alta resolução",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YRi-V"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Inspeção 3D (medição de altura)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Câmera 4-angle lateral",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Geração automática de biblioteca por IA",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Integração com linha Yamaha (inline)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Feedback de dados para impressora/montadora",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "PCB mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB máximo (single-lane)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L510×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Componente mínimo detectável",
+                    "tone": ""
+                  },
+                  {
+                    "text": "0201mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Single-phase AC 200/208/220/230 ±10% 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.640 × W1.840 × H1.525 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 1.800 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "family": "inspection",
+          "slug": "ysi-sp",
+          "model": "YSi-SP",
+          "tagline": "3D Solder Paste Inspection",
+          "description": "Sistema de inspeção de pasta de solda 3D (SPI) de alta velocidade da Yamaha. Utiliza luz estruturada para medir com precisão volume, área e altura dos depósitos de pasta de solda após a impressão. Integrado inline com a impressora YRP10/YRP10e para feedback automático e ajuste de parâmetros em tempo real, reduzindo defeitos por má impressão.",
+          "image": "https://global.yamaha-motor.com/business/smt/spi/ysi-sp/img/main_img.jpg",
+          "quick": [
+            {
+              "label": "Tipo de inspeção",
+              "value": "3D com luz estruturada"
+            },
+            {
+              "label": "Parâmetros medidos",
+              "value": "Volume, área e altura"
+            },
+            {
+              "label": "Integração inline",
+              "value": "YRP10 / YRP10e"
+            },
+            {
+              "label": "PCB máximo",
+              "value": "510×510mm"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YSi-SP"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Inspeção 3D (luz estruturada)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Medição de volume de pasta",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Medição de altura de pasta",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Medição de área de pasta",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Feedback inline para impressora",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Integração com YRP10 / YRP10e",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "PCB mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB máximo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L510×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Abertura mínima de stencil detectável",
+                    "tone": ""
+                  },
+                  {
+                    "text": "0201mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Single-phase AC 200/208/220/230 ±10% 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.050 × W1.600 × H1.500 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 900 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "family": "inspection",
+          "slug": "ysi-v",
+          "model": "YSi-V",
+          "tagline": "Automated Optical Inspection",
+          "description": "Sistema de inspeção óptica automática (AOI) da Yamaha com câmera de alta resolução e iluminação multicolor. Detecta componentes ausentes, deslocados, invertidos e soldas defeituosas após a montagem. Integra-se inline com a linha de montagem YR Series para feedback em tempo real. Para inspeção com medição 3D de altura, veja o modelo superior YRi-V.",
+          "image": "https://global.yamaha-motor.com/business/smt/aoi/ysi-v/img/main_img.jpg",
+          "quick": [
+            {
+              "label": "Tipo de inspeção",
+              "value": "AOI 2D + ângulo lateral"
+            },
+            {
+              "label": "Integração inline",
+              "value": "Linha YR Series"
+            },
+            {
+              "label": "PCB máximo",
+              "value": "510×510mm"
+            },
+            {
+              "label": "Componente mínimo",
+              "value": "0402mm"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YSi-V"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Inspeção 3D (medição de altura)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "Inspeção AOI 2D + lateral",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Iluminação multicolor",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Feedback inline para montadora",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Integração com linha YR Series",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "PCB mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB máximo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L510×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Componente mínimo detectável",
+                    "tone": ""
+                  },
+                  {
+                    "text": "0402mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Single-phase AC 200/208/220/230 ±10% 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Dimensões externas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L1.050 × W1.600 × H1.450 mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 850 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hybrid-placer",
+      "name": "Hybrid Placer",
+      "machines": [
+        {
+          "family": "hybrid-placer",
+          "slug": "yrh10",
+          "model": "YRH10 / YRH10W",
+          "tagline": "Hybrid Placer — SMT + Odd-Form + Through-Hole",
+          "description": "Hybrid Placer da Yamaha para montagem de componentes SMT convencionais, odd-form (formato irregular) e through-hole na mesma máquina. O YRH10 opera com conveyor de largura padrão e o YRH10W com conveyor largo. Equipado com cabeças de múltiplos eixos para inserção com force control em conectores e componentes de alta força de inserção.",
+          "image": "https://global.yamaha-motor.com/business/smt/hybridplacer/yrh10/img/main_img.jpg",
+          "quick": [
+            {
+              "label": "Tipos de componente",
+              "value": "SMT, Odd-Form, Through-Hole"
+            },
+            {
+              "label": "Force control",
+              "value": "Sim (inserção de alta força)"
+            },
+            {
+              "label": "Variante larga",
+              "value": "YRH10W (conveyor largo)"
+            },
+            {
+              "label": "PCB máximo",
+              "value": "510×460mm (YRH10)"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Comparativo YRH10 vs YRH10W",
+              "headers": [
+                "Especificação",
+                "YRH10",
+                "YRH10W"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Largura do conveyor",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Padrão",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Largo",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB máximo (largura)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "W460mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Montagem de componentes SMT",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Montagem de componentes odd-form",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Inserção through-hole",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Force control",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Características da máquina",
+              "headers": [
+                "Característica",
+                "YRH10 / YRH10W"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Plataforma YR Series",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Montagem SMT (superfície)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Montagem odd-form (irregular)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Inserção through-hole",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Force control (inserção)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Suporta die/wafer",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dual-lane",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Não",
+                    "tone": "no"
+                  }
+                ],
+                [
+                  {
+                    "text": "SEMI SMT-ELS (compatibilidade)",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Opcional",
+                    "tone": "partial"
+                  }
+                ],
+                [
+                  {
+                    "text": "Touch panel",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas e dimensões",
+              "headers": [
+                "Item",
+                "YRH10",
+                "YRH10W"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "PCB mínimo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L50×W50mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "PCB máximo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L510×W460mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "L510×W510mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Alimentação elétrica",
+                    "tone": ""
+                  },
+                  {
+                    "text": "3-Phase AC 200-416V ±10% 50/60Hz",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Ar comprimido",
+                    "tone": ""
+                  },
+                  {
+                    "text": "≥0,45 MPa, limpo e seco",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Peso",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 1.400 kg",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Aprox. 1.450 kg",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acessorios",
+      "name": "Acessórios e Consumíveis",
+      "machines": [
+        {
+          "family": "acessorios",
+          "slug": "alf",
+          "model": "ALF",
+          "tagline": "Auto Loading Feeder",
+          "description": "O Auto Loading Feeder (ALF) permite a troca automática de carretéis de componentes durante a produção, sem parar a linha. Compatível com as montadoras YRM Series, o ALF elimina paradas não planejadas por falta de componentes. Um único operador consegue gerenciar múltiplas máquinas simultaneamente, aumentando a produtividade e reduzindo o custo operacional.",
+          "image": "https://global.yamaha-motor.com/business/smt/feeder/alf/img/main_img.jpg",
+          "quick": [
+            {
+              "label": "Troca de carretel",
+              "value": "Sem parar a linha"
+            },
+            {
+              "label": "Compatibilidade",
+              "value": "YRM20DL, YRM20, YRM10"
+            },
+            {
+              "label": "Larguras suportadas",
+              "value": "8mm a 56mm"
+            },
+            {
+              "label": "Monitoramento",
+              "value": "Integrado ao YSUP / iFactory"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Características",
+              "headers": [
+                "Característica",
+                "ALF"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Troca de carretel sem parar linha",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Compatível com YRM20DL",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Compatível com YRM20",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Compatível com YRM10",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Integração com YSUP / iFactory",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Alerta de componente baixo",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Verificação automática de componente",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Largura 8mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ],
+                [
+                  {
+                    "text": "Largura 12mm a 56mm",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Sim",
+                    "tone": "yes"
+                  }
+                ]
+              ]
+            },
+            {
+              "title": "Especificações técnicas",
+              "headers": [
+                "Item",
+                "Valor"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "Larguras de tape suportadas",
+                    "tone": ""
+                  },
+                  {
+                    "text": "8mm, 12mm, 16mm, 24mm, 32mm, 44mm, 56mm",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Compatibilidade de montadoras",
+                    "tone": ""
+                  },
+                  {
+                    "text": "YRM20DL, YRM20, YRM10 (YR Series)",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Modo de operação",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Troca automática em produção (sem parada)",
+                    "tone": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Integração de software",
+                    "tone": ""
+                  },
+                  {
+                    "text": "Intelligent Factory YSUP / iFactory",
+                    "tone": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "software",
+      "name": "Management Software",
+      "machines": [
+        {
+          "family": "software",
+          "slug": "software",
+          "model": "Management Software",
+          "tagline": "",
+          "description": "Pacotes de software para gestão de fábricas SMT no conceito Intelligent Factory (IoT/M2M). Conectividade plug-and-play entre máquinas Yamaha e de terceiros.",
+          "image": "https://global.yamaha-motor.com/business/smt/img_thumbnail/ifactory.jpg",
+          "quick": [],
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

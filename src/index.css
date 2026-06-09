@@ -2,53 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== Theme: Tech Innovation (theme-factory) =====
-   Electric Blue #0066ff · Neon Cyan #00ffff · Dark Gray #1e1e1e · White */
+/* ===== Identidade SMT Solutions (cores extraídas do site oficial) =====
+   green-dark #1B5E20 · green-primary #2E7D32 · green-light #4CAF50 · green-pale #E8F5E9
+   Fundo branco, fonte Inter. */
 @layer base {
   :root {
-    --background: 0 0% 7%;          /* near #121212 */
-    --foreground: 0 0% 98%;
-    --card: 0 0% 11%;              /* #1e1e1e */
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 218 100% 50%;       /* electric blue #0066ff */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;          /* gray-900 #212121 */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    --primary: 123 46% 34%;          /* green-primary #2E7D32 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 16%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 64%;
-    --accent: 180 100% 50%;        /* neon cyan #00ffff */
-    --accent-foreground: 0 0% 7%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 218 100% 50%;
+    --secondary: 0 0% 96%;           /* gray-50 */
+    --secondary-foreground: 0 0% 13%;
+    --muted: 0 0% 93%;               /* gray-100 */
+    --muted-foreground: 0 0% 46%;    /* gray-500 #757575 */
+    --accent: 123 39% 93%;           /* green-pale #E8F5E9 */
+    --accent-foreground: 124 55% 24%;/* green-dark */
+    --destructive: 0 65% 47%;        /* #C62828 */
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 123 46% 34%;
     --radius: 0.5rem;
-  }
 
-  /* The site is dark-first; keep .dark identical so shadcn components match. */
-  .dark {
-    --background: 0 0% 7%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 11%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 218 100% 50%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 16%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 64%;
-    --accent: 180 100% 50%;
-    --accent-foreground: 0 0% 7%;
-    --destructive: 0 62% 31%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 218 100% 50%;
+    /* Tokens de marca */
+    --green-dark: 124 55% 24%;
+    --green-light: 122 39% 49%;      /* #4CAF50 */
+    --tone-yes: 123 46% 34%;
+    --tone-yes-bg: 123 39% 93%;
+    --tone-no: 0 65% 47%;
+    --tone-no-bg: 0 100% 96%;
+    --tone-partial: 33 100% 48%;     /* #F57C00 */
+    --tone-partial-bg: 36 100% 94%;
   }
 }
 
@@ -61,29 +49,21 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: "Manrope", system-ui, sans-serif;
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    color: hsl(var(--green-dark));
+    font-weight: 700;
+    line-height: 1.25;
   }
 }
 
 @layer utilities {
-  /* Neon/tech helpers */
-  .text-glow {
-    text-shadow: 0 0 24px hsl(var(--primary) / 0.55);
+  .brand-gradient {
+    background-image: linear-gradient(135deg, hsl(var(--green-dark)), hsl(var(--primary)));
   }
-  .grid-bg {
-    background-image:
-      linear-gradient(hsl(var(--border) / 0.6) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--border) / 0.6) 1px, transparent 1px);
-    background-size: 44px 44px;
-  }
-  .radial-fade {
-    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
-    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
-  }
-  .ring-glow {
-    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.4), 0 0 40px -8px hsl(var(--primary) / 0.6);
-  }
+  .cell-yes { color: hsl(var(--tone-yes)); background-color: hsl(var(--tone-yes-bg)); font-weight: 600; }
+  .cell-no { color: hsl(var(--tone-no)); background-color: hsl(var(--tone-no-bg)); font-weight: 600; }
+  .cell-partial { color: hsl(var(--tone-partial)); background-color: hsl(var(--tone-partial-bg)); font-weight: 600; }
 }
