@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" role="img" aria-label="SMTS — official MSTECH partner">
+  <defs>
+    <style>
+      .smts-w { font-family: "Jost", "Futura PT", "Futura Heavy", "Inter", system-ui, sans-serif; font-weight: 800; letter-spacing: 0.04em; }
+      .smts-t { font-family: "Inter", "Segoe UI", system-ui, sans-serif; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
+    </style>
+  </defs>
+  <!-- Geometric mark: stacked panels suggesting a depaneled PCB -->
+  <g transform="translate(8, 18)">
+    <rect x="0"  y="0"  width="14" height="14" rx="2" fill="#004730"/>
+    <rect x="18" y="0"  width="14" height="14" rx="2" fill="#004730"/>
+    <rect x="0"  y="18" width="14" height="14" rx="2" fill="#98D714"/>
+    <rect x="18" y="18" width="14" height="14" rx="2" fill="#004730"/>
+    <rect x="0"  y="36" width="14" height="14" rx="2" fill="#004730"/>
+    <rect x="18" y="36" width="14" height="14" rx="2" fill="#004730"/>
+  </g>
+  <!-- Wordmark + tagline -->
+  <text class="smts-w" x="58" y="42" font-size="32" fill="#004730">SMTS</text>
+  <text class="smts-t" x="58" y="60" font-size="9" fill="#3C4541">Official MSTECH Partner</text>
+</svg>
