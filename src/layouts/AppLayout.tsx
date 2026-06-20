@@ -4,6 +4,7 @@ import { Sidebar } from "@/components/nav/Sidebar";
 import { MobileTopBar } from "@/components/nav/MobileTopBar";
 import { MobileDrawer } from "@/components/nav/MobileDrawer";
 import { Footer } from "@/components/site/SiteFooter";
+import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { useUI } from "@/stores/ui";
 
 export function AppLayout() {
@@ -27,6 +28,7 @@ export function AppLayout() {
         </div>
         <Footer />
       </main>
+      <WhatsAppButton />
     </div>
   );
 }

@@ -11,7 +11,8 @@ import NotFound from "@/pages/NotFound";
 const subcategoryLabel: Record<string, string> = {
   "in-line": "In-Line",
   "off-line": "Off-Line",
-  support: "Suporte & Automação",
+  support: "Support & Automation",
+  standard: "Standard",
 };
 
 export default function CategoryLanding() {
@@ -33,13 +34,13 @@ export default function CategoryLanding() {
   return (
     <>
       <Helmet>
-        <title>{cat.name} · Catálogo · SMTS</title>
+        <title>{cat.name} · Catalog · SMTS</title>
         <meta name="description" content={cat.description} />
       </Helmet>
 
       <nav className="border-b border-[var(--border-c)] bg-[var(--surface-1)]">
         <div className="mx-auto flex max-w-[1280px] items-center gap-2 px-6 py-4 font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)] lg:px-12">
-          <Link to="/catalog" className="hover:text-[var(--brand-green)]">Catálogo</Link>
+          <Link to="/catalog" className="hover:text-[var(--brand-green)]">Catalog</Link>
           <ChevronRight className="h-3 w-3" />
           <span className="text-[var(--text-0)]">{cat.name}</span>
         </div>
@@ -50,7 +51,7 @@ export default function CategoryLanding() {
       {availableSubs.length > 1 && (
         <div className="border-b border-[var(--border-c)] bg-[var(--surface-1)]">
           <div className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-2 px-6 py-4 lg:px-12">
-            <span className="font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">Filtrar</span>
+            <span className="font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">Filter</span>
             <button
               type="button"
               onClick={() => setFilter("all")}
@@ -60,7 +61,7 @@ export default function CategoryLanding() {
                   : "border border-[var(--border-c)] text-[var(--text-1)] hover:border-[var(--brand-lime)]"
               }`}
             >
-              Todos
+              All
             </button>
             {availableSubs.map((sub) => (
               <button
@@ -83,7 +84,7 @@ export default function CategoryLanding() {
       <section className="py-16 lg:py-20">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           {filtered.length === 0 ? (
-            <p className="text-center text-[var(--text-1)]">Nenhum equipamento corresponde a este filtro.</p>
+            <p className="text-center text-[var(--text-1)]">No machines match this filter.</p>
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {filtered.map((m) => (
@@ -97,7 +98,7 @@ export default function CategoryLanding() {
       <section className="border-t border-[var(--border-c)] bg-[var(--surface-2)] py-12">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           <h3 className="font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">
-            Outras categorias
+            Other categories
           </h3>
           <div className="mt-4 flex flex-wrap gap-3">
             {categories

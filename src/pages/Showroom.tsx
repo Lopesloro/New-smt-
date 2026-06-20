@@ -29,10 +29,10 @@ export default function Showroom() {
   return (
     <>
       <Helmet>
-        <title>Showroom · Equipamentos · SMTS</title>
+        <title>Showroom · Equipment · SMTS</title>
         <meta
           name="description"
-          content="Showroom interativo — explore os equipamentos com hotspots, vídeos e visualização 360°."
+          content="Interactive showroom — explore the equipment with hotspots, videos and 360° rotation."
         />
       </Helmet>
 
@@ -44,7 +44,7 @@ export default function Showroom() {
               Showroom
             </p>
             <h1 className="mt-1 font-display text-xl uppercase tracking-tight md:text-2xl">
-              Explore os equipamentos
+              Explore the equipment
             </h1>
           </div>
           <div className="hidden gap-2 font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)] md:flex">
@@ -67,17 +67,17 @@ export default function Showroom() {
                   type="button"
                   onClick={prev}
                   className="inline-flex items-center gap-2 rounded-md border border-[var(--border-c)] px-4 py-2 font-mono-tech text-xs uppercase tracking-widest text-[var(--text-1)] hover:border-[var(--brand-lime)] hover:text-[var(--brand-green)] transition"
-                  aria-label="Equipamento anterior"
+                  aria-label="Previous equipment"
                 >
-                  <ChevronLeft className="h-4 w-4" /> Anterior
+                  <ChevronLeft className="h-4 w-4" /> Prev
                 </button>
                 <button
                   type="button"
                   onClick={next}
                   className="inline-flex items-center gap-2 rounded-md border border-[var(--border-c)] px-4 py-2 font-mono-tech text-xs uppercase tracking-widest text-[var(--text-1)] hover:border-[var(--brand-lime)] hover:text-[var(--brand-green)] transition"
-                  aria-label="Próximo equipamento"
+                  aria-label="Next equipment"
                 >
-                  Próximo <ChevronRight className="h-4 w-4" />
+                  Next <ChevronRight className="h-4 w-4" />
                 </button>
               </div>
             </div>
@@ -109,7 +109,7 @@ export default function Showroom() {
                   to={`/catalog/${cat.slug}/${machine.slug}`}
                   className="mt-8 inline-flex items-center gap-2 rounded-md bg-[var(--brand-green)] px-5 py-2.5 font-display text-xs uppercase tracking-widest text-white hover:bg-[var(--brand-green-light)] transition"
                 >
-                  Ver especificações <ArrowUpRight className="h-4 w-4" />
+                  Full specs <ArrowUpRight className="h-4 w-4" />
                 </Link>
               )}
             </div>
@@ -121,7 +121,7 @@ export default function Showroom() {
       <section>
         <div className="mx-auto max-w-[1280px] px-6 py-10 lg:px-12 lg:py-14">
           <p className="font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">
-            Todos os equipamentos
+            All equipment
           </p>
           <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
             {all.map((m, i) => {

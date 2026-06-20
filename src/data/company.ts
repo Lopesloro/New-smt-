@@ -1,117 +1,117 @@
-// SMTS — SMT Soluções
-// Empresa brasileira (Campinas-SP) que representa e distribui equipamentos de
-// montagem eletrônica, automação e testes na América do Sul.
-// Fonte: manual de marca + LinkedIn (linkedin.com/company/smts).
+// SMTS — SMT Solutions
+// Brazilian company (Campinas-SP) that represents and distributes electronic
+// assembly, automation and test equipment across South America.
+// Source: brand manual + LinkedIn (linkedin.com/company/smts).
 
 export const smts = {
   name: "SMT Solutions",
   shortName: "SMTS",
   founded: 2005,
   experienceYears: 20,
-  region: "América do Sul",
+  region: "South America",
   city: "Campinas",
   state: "SP",
-  country: "Brasil",
-  tagline: "Soluções em montagem eletrônica, automação e testes.",
+  country: "Brazil",
+  tagline: "Solutions for electronic assembly, automation and testing.",
   description:
-    "A SMTS fornece produtos e serviços para atender às necessidades dos clientes em processos de montagem eletrônica, automação geral e testes. Com profissionais que somam mais de 20 anos de experiência no mercado de alta tecnologia e eletrônica automotiva, atende clientes em todo o Brasil e na América do Sul.",
+    "SMTS provides products and services that meet customer needs in electronic assembly, general automation and testing. Backed by professionals with more than 20 years of experience in high technology and automotive electronics, it serves customers across Brazil and South America.",
   address: {
     street: "Av. Dr. Jesuino Marcondes Machado, 2071",
     district: "Chácara da Barra",
     city: "Campinas",
     state: "SP",
     zip: "13090-723",
-    country: "Brasil",
+    country: "Brazil",
   },
   phone: "+55 (19) 3294-8902",
   mobile: "+55 (19) 8102-6737",
+  whatsapp: "5519981026737",
   email: "ricardo@smts.com.br",
-  contact: { name: "Ricardo", role: "Administrador" },
+  contact: { name: "Ricardo", role: "Administrator" },
   domain: "smts.com.br",
 };
 
-// O que a SMTS entrega
+// What SMTS delivers
 export const smtsServices = [
-  "Representação e venda de equipamentos para montagem eletrônica (SMT)",
-  "Automação industrial e linhas de produção",
-  "Sistemas de inspeção e testes",
-  "Geração de oxigênio e nitrogênio",
-  "Importação e exportação de equipamentos",
-  "Instalação, treinamento e suporte pós-venda",
+  "Representation and sales of electronic assembly (SMT) equipment",
+  "Industrial automation and production lines",
+  "Inspection and testing systems",
+  "Oxygen and nitrogen generation",
+  "Equipment import and export",
+  "Installation, training and after-sales support",
 ];
 
-// Números que representam a SMTS
+// Numbers that represent SMTS
 export const smtsStats = [
-  { n: "2005", l: "Fundação" },
-  { n: "20+", l: "Anos de experiência" },
-  { n: "América do Sul", l: "Atuação" },
-  { n: "6+", l: "Marcas representadas" },
+  { n: "2005", l: "Founded" },
+  { n: "20+", l: "Years of experience" },
+  { n: "South America", l: "Coverage" },
+  { n: "5+", l: "Brands represented" },
 ];
 
 export const smtsValues = [
   {
-    title: "Experiência",
-    text: "Mais de 20 anos de mercado em alta tecnologia e eletrônica automotiva.",
+    title: "Experience",
+    text: "More than 20 years in high technology and automotive electronics.",
   },
   {
-    title: "Representação oficial",
-    text: "Parcerias diretas com fabricantes líderes mundiais em montagem eletrônica.",
+    title: "Official representation",
+    text: "Direct partnerships with world-leading electronic assembly manufacturers.",
   },
   {
-    title: "Suporte completo",
-    text: "Da especificação à instalação, treinamento e assistência técnica.",
+    title: "Full support",
+    text: "From specification to installation, training and technical assistance.",
   },
   {
-    title: "Alcance regional",
-    text: "Atendimento a clientes em todo o Brasil e na América do Sul.",
+    title: "Regional reach",
+    text: "Serving customers across Brazil and South America.",
   },
 ];
 
-// Fabricantes representados pela SMTS
+// Manufacturers represented by SMTS
 export const representedBrands = [
   {
-    name: "MSTECH",
-    country: "Coreia do Sul",
-    focus: "Depaneling (router, serra e laser) e automação fabril",
-    website: "https://www.mstechcorp.co.kr",
-  },
-  {
+    id: "yamaha",
     name: "Yamaha Robotics",
-    country: "Japão",
-    focus: "Linha SMT completa — mounters, printers, dispensers e inspeção",
+    country: "Japan",
+    focus: "Full SMT line — mounters, printers, dispensers and inspection",
     website: "https://www.yamaha-motor.com/robotics/",
   },
   {
+    id: "tamura",
     name: "Tamura",
-    country: "Japão",
-    focus: "Fornos de refusão (reflow)",
+    country: "Japan",
+    focus: "Reflow ovens",
     website: "https://www.tamura-ss.co.jp/en/",
   },
   {
+    id: "sawa",
     name: "Sawa",
-    country: "Japão",
-    focus: "Lavadoras de estêncil e nozzles",
+    country: "Japan",
+    focus: "Stencil and nozzle cleaners",
     website: "https://www.sawa-corp.co.jp/en/",
   },
   {
+    id: "xavis",
     name: "Xavis",
-    country: "Coreia do Sul",
-    focus: "Inspeção por Raio-X industrial",
+    country: "South Korea",
+    focus: "Industrial X-ray inspection",
     website: "http://www.xavisxray.com/",
   },
   {
+    id: "eunil",
     name: "Eunil",
-    country: "Coreia do Sul",
-    focus: "Marcação a laser, conformal coating e handling de PCB",
+    country: "South Korea",
+    focus: "Laser marking, conformal coating and PCB handling",
     website: "https://www.eunil.com/",
   },
 ];
 
 export const customerSegments = [
-  "Semicondutores",
+  "Semiconductor",
   "Mobile",
-  "Automotivo",
-  "Componentes eletrônicos",
+  "Automotive",
+  "Electronic parts",
   "EMS",
-  "Linha branca",
+  "Appliance",
 ];

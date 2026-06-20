@@ -9,6 +9,7 @@ import MachineDetail from "@/pages/MachineDetail";
 import Showroom from "@/pages/Showroom";
 import Resources from "@/pages/Resources";
 import Contact from "@/pages/Contact";
+import Privacy from "@/pages/Privacy";
 import NotFound from "@/pages/NotFound";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="showroom" element={<Showroom />} />
             <Route path="resources" element={<Resources />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="privacy" element={<Privacy />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

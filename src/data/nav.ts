@@ -15,19 +15,22 @@ export const isNavGroup = (item: NavItem): item is NavGroup =>
   (item as NavGroup).children !== undefined;
 
 export const navItems: NavItem[] = [
-  { label: "Início", to: "/" },
-  { label: "Sobre", to: "/about" },
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
   {
     key: "catalog",
-    label: "Catálogo",
+    label: "Catalog",
     children: [
-      { label: "Bit Router", to: "/catalog/bit-router" },
-      { label: "Sawing System", to: "/catalog/sawing" },
-      { label: "Laser System", to: "/catalog/laser" },
-      { label: "Outros & Suporte", to: "/catalog/others" },
+      { label: "Surface Mounters", to: "/catalog/surface-mounters" },
+      { label: "Printers", to: "/catalog/printers" },
+      { label: "Dispensers", to: "/catalog/dispensers" },
+      { label: "Inspection", to: "/catalog/inspection" },
+      { label: "Hybrid Placer", to: "/catalog/hybrid-placer" },
+      { label: "Software", to: "/catalog/software" },
+      { label: "Feeders & Storage", to: "/catalog/accessories" },
     ],
   },
   { label: "Showroom", to: "/showroom" },
-  { label: "Recursos", to: "/resources" },
-  { label: "Contato", to: "/contact" },
+  { label: "Resources", to: "/resources" },
+  { label: "Contact", to: "/contact" },
 ];

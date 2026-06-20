@@ -19,8 +19,8 @@ export function MediaStage({ media, hotspots, alt }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const tabs: { id: Tab; label: string; icon: typeof ImageIcon; enabled: boolean }[] = [
-    { id: "photo", label: "Foto", icon: ImageIcon, enabled: true },
-    { id: "video", label: "Vídeo", icon: Play, enabled: hasVideo },
+    { id: "photo", label: "Photo", icon: ImageIcon, enabled: true },
+    { id: "video", label: "Video", icon: Play, enabled: hasVideo },
     { id: "360", label: "360°", icon: RotateCw, enabled: has360 },
   ];
 
@@ -63,10 +63,10 @@ export function MediaStage({ media, hotspots, alt }: Props) {
                     ? "border border-[var(--border-c)] text-[var(--text-1)] hover:border-[var(--brand-lime)] hover:text-[var(--brand-green)]"
                     : "border border-[var(--border-c)] text-[var(--text-2)]/50 cursor-not-allowed"
               }`}
-              title={!t.enabled ? `${t.label} indisponível` : undefined}
+              title={!t.enabled ? `${t.label} not available yet` : undefined}
             >
               <t.icon className="h-3.5 w-3.5" /> {t.label}
-              {!t.enabled && <span className="ml-1 text-[10px]">em breve</span>}
+              {!t.enabled && <span className="ml-1 text-[10px]">soon</span>}
             </button>
           );
         })}

@@ -1,5 +1,21 @@
-export type CategoryId = "bit-router" | "sawing" | "laser" | "others";
-export type Subcategory = "in-line" | "off-line" | "support";
+export type BrandId =
+  | "yamaha"
+  | "tamura"
+  | "sawa"
+  | "xavis"
+  | "eunil";
+
+export type CategoryId =
+  // Yamaha
+  | "surface-mounters"
+  | "printers"
+  | "dispensers"
+  | "inspection"
+  | "hybrid-placer"
+  | "software"
+  | "accessories";
+
+export type Subcategory = "in-line" | "off-line" | "support" | "standard";
 
 export interface Spec {
   label: string;
@@ -24,6 +40,7 @@ export interface Machine {
   slug: string;
   name: string;
   fullName: string;
+  brand: BrandId;
   category: CategoryId;
   subcategory: Subcategory;
   tagline: string;
@@ -40,6 +57,7 @@ export interface Machine {
 export interface Category {
   id: CategoryId;
   slug: string; // url segment
+  brand: BrandId;
   name: string;
   tagline: string;
   description: string;

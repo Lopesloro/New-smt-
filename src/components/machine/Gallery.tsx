@@ -18,7 +18,7 @@ export function Gallery({ images, alt }: Props) {
             key={src}
             type="button"
             onClick={() => setOpen(src)}
-            className="group relative aspect-[4/3] overflow-hidden rounded-md border border-white/10 bg-black"
+            className="group relative aspect-[4/3] overflow-hidden rounded-md border border-[var(--border-c)] bg-[var(--surface-3)]"
             aria-label={`Open image ${i + 1}`}
           >
             <img

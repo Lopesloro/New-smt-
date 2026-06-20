@@ -22,12 +22,27 @@ export default function MachineDetail() {
       <Helmet>
         <title>{machine.name} · {cat.name} · SMTS</title>
         <meta name="description" content={machine.tagline} />
+        <meta property="og:title" content={`${machine.fullName} · SMTS`} />
+        <meta property="og:description" content={machine.tagline} />
+        <meta property="og:image" content={machine.media.poster} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: machine.fullName,
+            sku: machine.name,
+            category: cat.name,
+            brand: { "@type": "Brand", name: machine.brand },
+            description: machine.description,
+            image: machine.media.poster,
+          })}
+        </script>
       </Helmet>
 
       {/* Breadcrumb */}
       <nav className="border-b border-[var(--border-c)] bg-[var(--surface-1)]">
         <div className="mx-auto flex max-w-[1280px] items-center gap-2 px-6 py-4 font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)] lg:px-12">
-          <Link to="/catalog" className="hover:text-[var(--brand-green)]">Catálogo</Link>
+          <Link to="/catalog" className="hover:text-[var(--brand-green)]">Catalog</Link>
           <ChevronRight className="h-3 w-3" />
           <Link to={`/catalog/${cat.slug}`} className="hover:text-[var(--brand-green)]">{cat.name}</Link>
           <ChevronRight className="h-3 w-3" />
@@ -59,13 +74,13 @@ export default function MachineDetail() {
                   to="/contact"
                   className="inline-flex items-center gap-2 rounded-md bg-[var(--brand-green)] px-5 py-2.5 font-display text-xs uppercase tracking-widest text-white hover:bg-[var(--brand-green-light)] transition"
                 >
-                  Solicitar orçamento <ArrowRight className="h-4 w-4" />
+                  Request quote <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
                   to="/showroom"
                   className="inline-flex items-center gap-2 rounded-md border border-[var(--border-c)] px-5 py-2.5 font-display text-xs uppercase tracking-widest text-[var(--text-1)] hover:border-[var(--brand-lime)] hover:text-[var(--brand-green)] transition"
                 >
-                  Abrir no showroom
+                  Open in showroom
                 </Link>
               </div>
             </div>
@@ -80,7 +95,7 @@ export default function MachineDetail() {
             <div>
               <div className="flex items-center gap-3">
                 <Check className="h-5 w-5 text-[var(--brand-lime-dim)]" />
-                <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Recursos</h2>
+                <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Features</h2>
               </div>
               <ul className="mt-6 space-y-3">
                 {machine.features.map((f) => (
@@ -96,7 +111,7 @@ export default function MachineDetail() {
               <div>
                 <div className="flex items-center gap-3">
                   <Sliders className="h-5 w-5 text-[var(--brand-lime-dim)]" />
-                  <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Opcionais</h2>
+                  <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Options</h2>
                 </div>
                 <ul className="mt-6 space-y-3">
                   {machine.options.map((o) => (
@@ -119,7 +134,7 @@ export default function MachineDetail() {
             <div className="flex flex-wrap items-center gap-4">
               <Factory className="h-5 w-5 text-[var(--brand-lime-dim)]" />
               <span className="font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">
-                Aplicações
+                Applications
               </span>
               {machine.applications.map((a) => (
                 <span
@@ -137,7 +152,7 @@ export default function MachineDetail() {
       {/* Specs */}
       <section className="border-b border-[var(--border-c)]">
         <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-12 lg:py-20">
-          <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Especificações</h2>
+          <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Specifications</h2>
           <div className="mt-6">
             <SpecsTable specs={machine.specs} machineName={machine.name} />
           </div>
@@ -148,7 +163,7 @@ export default function MachineDetail() {
       {machine.media.gallery.length > 0 && (
         <section className="border-b border-[var(--border-c)]">
           <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-12 lg:py-20">
-            <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Galeria</h2>
+            <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Gallery</h2>
             <div className="mt-6">
               <Gallery images={machine.media.gallery} alt={machine.fullName} />
             </div>
@@ -161,7 +176,7 @@ export default function MachineDetail() {
         <section>
           <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-12 lg:py-20">
             <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">
-              Equipamentos relacionados
+              Related machines
             </h2>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((m) => (

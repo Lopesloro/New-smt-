@@ -16,16 +16,16 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>Sobre · SMT Solutions (SMTS)</title>
+        <title>About · SMT Solutions (SMTS)</title>
         <meta
           name="description"
-          content="A SMTS é uma empresa de Campinas-SP, fundada em 2005, que fornece equipamentos e serviços para montagem eletrônica, automação e testes, representando fabricantes líderes mundiais na América do Sul."
+          content="SMTS is a Campinas-based company, founded in 2005, providing equipment and services for electronic assembly, automation and testing, representing world-leading manufacturers across South America."
         />
       </Helmet>
 
       <PageHero
-        eyebrow="Sobre a SMTS"
-        title="Soluções para a indústria eletrônica desde 2005."
+        eyebrow="About SMTS"
+        title="Solutions for the electronics industry since 2005."
         subtitle={smts.description}
       />
 
@@ -51,22 +51,22 @@ export default function About() {
         </div>
       </section>
 
-      {/* Quem somos / Valores */}
+      {/* Who we are / Values */}
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
               <h2 className="font-display text-2xl uppercase tracking-tight md:text-3xl">
-                Quem somos
+                Who we are
               </h2>
               <p className="mt-6 leading-relaxed text-[var(--text-1)]">
-                A SMTS — SMT Solutions — é uma empresa brasileira sediada em {smts.city}-{smts.state},
-                especializada em equipamentos e serviços para a indústria de montagem eletrônica.
-                Representamos fabricantes líderes mundiais e oferecemos suporte completo, da
-                especificação ao pós-venda, para clientes em todo o Brasil e na América do Sul.
+                SMTS — SMT Solutions — is a Brazilian company based in {smts.city}-{smts.state},
+                specialized in equipment and services for the electronic assembly industry. We
+                represent world-leading manufacturers and provide full support, from specification
+                to after-sales, to customers across Brazil and South America.
               </p>
               <h3 className="mt-10 font-display text-lg uppercase tracking-tight">
-                Setores atendidos
+                Industries served
               </h3>
               <div className="mt-5 flex flex-wrap gap-3">
                 {customerSegments.map((seg) => (
@@ -97,11 +97,11 @@ export default function About() {
         </div>
       </section>
 
-      {/* O que fazemos */}
+      {/* What we do */}
       <section className="bg-[var(--surface-2)] py-20 lg:py-28">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           <h2 className="font-display text-2xl uppercase tracking-tight md:text-3xl">
-            O que fazemos
+            What we do
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {smtsServices.map((srv) => (
@@ -117,14 +117,14 @@ export default function About() {
         </div>
       </section>
 
-      {/* Marcas representadas */}
+      {/* Represented brands */}
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           <h2 className="font-display text-2xl uppercase tracking-tight md:text-3xl">
-            Marcas representadas
+            Brands we represent
           </h2>
           <p className="mt-3 max-w-2xl text-[var(--text-1)]">
-            Parcerias com fabricantes líderes mundiais em montagem eletrônica, inspeção e automação.
+            Partnerships with world-leading manufacturers in electronic assembly, inspection and automation.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {representedBrands.map((b) => (
