@@ -16,7 +16,7 @@ interface UIState {
 
 export const useUI = create<UIState>((set) => ({
   drawerOpen: false,
-  expanded: { catalog: true },
+  expanded: {},
   theme: "light",
   toggleDrawer: () => set((s) => ({ drawerOpen: !s.drawerOpen })),
   closeDrawer: () => set({ drawerOpen: false }),

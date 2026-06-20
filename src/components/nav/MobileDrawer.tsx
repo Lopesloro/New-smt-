@@ -105,7 +105,7 @@ export function MobileDrawer() {
           </ul>
         </nav>
         <div className="border-t border-[var(--border-c)] px-5 py-4 text-[11px] leading-relaxed text-[var(--text-2)]">
-          © {new Date().getFullYear()} SMTS · Official MSTECH Partner
+          © {new Date().getFullYear()} SMT Solutions · Campinas-SP
         </div>
       </aside>
     </>

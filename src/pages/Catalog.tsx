@@ -9,17 +9,17 @@ export default function Catalog() {
   return (
     <>
       <Helmet>
-        <title>Catalog · MSTECH depaneling systems</title>
+        <title>Catálogo · Equipamentos · SMTS</title>
         <meta
           name="description"
-          content="Browse the complete MSTECH depaneling lineup distributed by SMTS in Brazil & Argentina — Bit Router, Sawing, Laser and Support systems."
+          content="Conheça a linha completa de equipamentos distribuída pela SMTS no Brasil e na América do Sul — sistemas de Bit Router, Sawing, Laser e suporte."
         />
       </Helmet>
 
       <PageHero
-        eyebrow="Catalog"
-        title="The full MSTECH lineup."
-        subtitle="Bit routing, sawing, laser depaneling and factory-automation support — engineered for high-mix, high-precision PCB manufacturing."
+        eyebrow="Catálogo"
+        title="Linha completa de equipamentos."
+        subtitle="Depaneling por router, serra e laser, além de suporte e automação fabril — para produção de PCB de alto mix e alta precisão."
       />
 
       <section className="py-20 lg:py-28">
@@ -38,7 +38,7 @@ export default function Catalog() {
                   <div className="relative">
                     <div className="flex items-center justify-between">
                       <span className="font-mono-tech text-xs uppercase tracking-widest text-[var(--brand-lime-dim)]">
-                        {count} machine{count === 1 ? "" : "s"}
+                        {count} {count === 1 ? "equipamento" : "equipamentos"}
                       </span>
                       <ArrowRight className="h-5 w-5 text-[var(--text-2)] transition-all group-hover:translate-x-1 group-hover:text-[var(--brand-green)]" />
                     </div>
@@ -62,16 +62,16 @@ export default function Catalog() {
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div>
-              <h3 className="font-display text-xl uppercase tracking-tight">Not sure which line fits?</h3>
+              <h3 className="font-display text-xl uppercase tracking-tight">Não sabe qual linha escolher?</h3>
               <p className="mt-2 text-sm text-[var(--text-1)]">
-                Tell us your PCB design and target volume — we'll spec the right machine.
+                Conte o seu projeto de PCB e o volume desejado — indicamos o equipamento certo.
               </p>
             </div>
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 rounded-md bg-[var(--brand-green)] px-6 py-3 font-display text-sm uppercase tracking-wider text-white hover:bg-[var(--brand-green-light)] transition"
             >
-              Talk to engineering <ArrowRight className="h-4 w-4" />
+              Falar com a equipe <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>

@@ -77,12 +77,12 @@ export function Sidebar() {
       {/* Footer of sidebar */}
       <div className="border-t border-[var(--border-c)] px-6 py-5">
         <div className="text-[10px] uppercase tracking-[0.12em] text-[var(--text-2)]">
-          Lang
+          Idioma
         </div>
-        <div className="mt-1 text-sm font-medium text-[var(--text-1)]">EN</div>
+        <div className="mt-1 text-sm font-medium text-[var(--text-1)]">PT-BR</div>
         <div className="mt-4 text-[11px] leading-relaxed text-[var(--text-2)]">
-          © {new Date().getFullYear()} SMTS<br />
-          Official MSTECH Partner
+          © {new Date().getFullYear()} SMT Solutions<br />
+          Campinas-SP · Brasil
         </div>
       </div>
     </aside>

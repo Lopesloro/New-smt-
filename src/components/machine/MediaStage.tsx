@@ -19,14 +19,14 @@ export function MediaStage({ media, hotspots, alt }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const tabs: { id: Tab; label: string; icon: typeof ImageIcon; enabled: boolean }[] = [
-    { id: "photo", label: "Photo", icon: ImageIcon, enabled: true },
-    { id: "video", label: "Video", icon: Play, enabled: hasVideo },
+    { id: "photo", label: "Foto", icon: ImageIcon, enabled: true },
+    { id: "video", label: "Vídeo", icon: Play, enabled: hasVideo },
     { id: "360", label: "360°", icon: RotateCw, enabled: has360 },
   ];
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="relative aspect-[16/10] overflow-hidden rounded-lg border border-white/10 bg-black">
+      <div className="relative aspect-[16/10] overflow-hidden rounded-lg border border-[var(--border-c)] bg-black">
         {tab === "photo" && (
           <>
             <img src={media.poster} alt={alt} className="h-full w-full object-cover" />
@@ -60,13 +60,13 @@ export function MediaStage({ media, hotspots, alt }: Props) {
                 isActive
                   ? "bg-[var(--brand-lime)] text-[var(--brand-green-dark)]"
                   : t.enabled
-                    ? "border border-white/15 text-white/75 hover:border-[var(--brand-lime)] hover:text-white"
-                    : "border border-white/10 text-white/30 cursor-not-allowed"
+                    ? "border border-[var(--border-c)] text-[var(--text-1)] hover:border-[var(--brand-lime)] hover:text-[var(--brand-green)]"
+                    : "border border-[var(--border-c)] text-[var(--text-2)]/50 cursor-not-allowed"
               }`}
-              title={!t.enabled ? `${t.label} not available yet` : undefined}
+              title={!t.enabled ? `${t.label} indisponível` : undefined}
             >
               <t.icon className="h-3.5 w-3.5" /> {t.label}
-              {!t.enabled && <span className="ml-1 text-[10px]">soon</span>}
+              {!t.enabled && <span className="ml-1 text-[10px]">em breve</span>}
             </button>
           );
         })}

@@ -6,8 +6,8 @@ import { smts } from "@/data/company";
 
 const downloads = [
   {
-    title: "MSTECH Company Profile",
-    description: "30-year corporate overview, machine catalog and global network — official MSTECH 2024 edition.",
+    title: "Catálogo MSTECH",
+    description: "Visão geral corporativa, catálogo de equipamentos e rede global — edição oficial MSTECH.",
     href: "/catalog/mstech-profile.pdf",
     type: "PDF",
   },
@@ -15,8 +15,8 @@ const downloads = [
 
 const media = [
   {
-    title: "MSTECH Intro",
-    description: "Quick walkthrough of MSTECH's depaneling portfolio and factories.",
+    title: "Apresentação MSTECH",
+    description: "Visão rápida do portfólio de depaneling e das fábricas da MSTECH.",
     src: "/intro/mstech-intro.mp4",
   },
 ];
@@ -25,17 +25,17 @@ export default function Resources() {
   return (
     <>
       <Helmet>
-        <title>Resources · SMTS — Catalog & Documentation</title>
+        <title>Recursos · SMTS — Catálogos & Documentação</title>
         <meta
           name="description"
-          content="Download the MSTECH company catalog, watch product videos and request datasheets for any machine."
+          content="Baixe catálogos, assista a vídeos dos produtos e solicite a ficha técnica de qualquer equipamento."
         />
       </Helmet>
 
       <PageHero
-        eyebrow="Resources"
-        title="Catalogs, videos & datasheets."
-        subtitle="Everything you need to spec a MSTECH depaneling system. Datasheets per machine are sent on request — direct from the source."
+        eyebrow="Recursos"
+        title="Catálogos, vídeos e fichas técnicas."
+        subtitle="Tudo o que você precisa para especificar seu equipamento. As fichas técnicas por modelo são enviadas sob solicitação."
       />
 
       <section className="py-20 lg:py-24">
@@ -73,7 +73,7 @@ export default function Resources() {
 
       <section className="bg-[var(--surface-2)] py-20 lg:py-24">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
-          <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Videos</h2>
+          <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Vídeos</h2>
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             {media.map((v) => (
               <div
@@ -92,7 +92,7 @@ export default function Resources() {
                 <div className="p-5">
                   <div className="flex items-center gap-2">
                     <Play className="h-4 w-4 text-[var(--brand-lime-dim)]" />
-                    <span className="font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">Video</span>
+                    <span className="font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">Vídeo</span>
                   </div>
                   <h3 className="mt-2 font-display text-lg uppercase tracking-tight text-[var(--brand-green)]">
                     {v.title}
@@ -110,11 +110,11 @@ export default function Resources() {
           <div className="flex flex-col items-start justify-between gap-6 rounded-xl border border-[var(--border-c)] bg-[var(--surface-1)] p-8 md:flex-row md:items-center md:p-10">
             <div className="max-w-xl">
               <h3 className="font-display text-xl uppercase tracking-tight text-[var(--brand-green)]">
-                Need a datasheet for a specific model?
+                Precisa da ficha técnica de um modelo?
               </h3>
               <p className="mt-3 text-sm text-[var(--text-1)]">
-                We send the latest revision direct from MSTECH. Drop us a line with the machine name and
-                we'll forward the technical sheet plus a quote.
+                Enviamos a revisão mais recente direto do fabricante. Mande o nome do equipamento
+                e retornamos com a ficha técnica e um orçamento.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -122,13 +122,13 @@ export default function Resources() {
                 href={`mailto:${smts.email}?subject=Datasheet%20request`}
                 className="inline-flex items-center gap-2 rounded-md bg-[var(--brand-lime)] px-5 py-2.5 font-display text-xs uppercase tracking-widest text-[var(--brand-green-dark)] hover:bg-[var(--brand-lime-bright)] transition"
               >
-                <Mail className="h-4 w-4" /> Email us
+                <Mail className="h-4 w-4" /> Enviar e-mail
               </a>
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-md border border-[var(--border-c)] px-5 py-2.5 font-display text-xs uppercase tracking-widest text-[var(--text-1)] hover:border-[var(--brand-green)] transition"
               >
-                Open form
+                Abrir formulário
               </Link>
             </div>
           </div>

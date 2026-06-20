@@ -6,17 +6,16 @@ interface LogoProps {
 }
 
 export function Logo({ variant = "full", className = "" }: LogoProps) {
-  const src = variant === "full" ? "/brand/smts-wordmark.svg" : "/brand/smts-mark.svg";
   return (
     <Link
       to="/"
-      aria-label="SMTS — Home"
+      aria-label="SMT Solutions — Home"
       className={`inline-flex items-center ${className}`}
     >
       <img
-        src={src}
-        alt="SMTS — Official MSTECH Partner"
-        className={variant === "full" ? "h-12 w-auto" : "h-9 w-auto"}
+        src="/brand/smt-solutions.png"
+        alt="SMT Solutions"
+        className={variant === "full" ? "h-11 w-auto" : "h-8 w-auto"}
       />
     </Link>
   );

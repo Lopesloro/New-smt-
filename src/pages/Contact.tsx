@@ -9,12 +9,12 @@ import { smts } from "@/data/company";
 import { categories } from "@/data/categories";
 
 const schema = z.object({
-  name: z.string().min(2, "Tell us your name."),
-  email: z.string().email("A valid email is required."),
+  name: z.string().min(2, "Informe seu nome."),
+  email: z.string().email("Informe um e-mail válido."),
   company: z.string().optional(),
   phone: z.string().optional(),
-  interest: z.string().min(1, "Select an interest."),
-  message: z.string().min(10, "A short message helps us prepare."),
+  interest: z.string().min(1, "Selecione um interesse."),
+  message: z.string().min(10, "Uma mensagem curta nos ajuda a preparar o atendimento."),
 });
 
 type FormValues = z.infer<typeof schema>;
@@ -39,7 +39,7 @@ export default function Contact() {
       data.message,
     ].join("\n");
     const mailto = `mailto:${smts.email}?subject=${encodeURIComponent(
-      `SMTS · Website inquiry — ${data.interest}`,
+      `SMTS · Contato pelo site — ${data.interest}`,
     )}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
     setSent(true);
@@ -49,17 +49,17 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact · SMTS — Official MSTECH Partner Brazil & Argentina</title>
+        <title>Contato · SMT Solutions (SMTS) — Campinas-SP</title>
         <meta
           name="description"
-          content="Talk to our engineering team. SMTS is based in Campinas, SP, and serves Brazil & Argentina as the official MSTECH partner."
+          content="Fale com a nossa equipe. A SMTS fica em Campinas-SP e atende clientes no Brasil e na América do Sul em montagem eletrônica, automação e testes."
         />
       </Helmet>
 
       <PageHero
-        eyebrow="Contact"
-        title="Let's spec your depaneling line."
-        subtitle="Reach out for sales, technical support or partnership. We respond within one business day."
+        eyebrow="Contato"
+        title="Vamos especificar a sua linha."
+        subtitle="Fale conosco para vendas, suporte técnico ou parcerias. Respondemos em até um dia útil."
       />
 
       <section className="py-20 lg:py-24">
@@ -67,16 +67,16 @@ export default function Contact() {
           <div className="grid gap-12 lg:grid-cols-[1.2fr,1fr] lg:gap-16">
             {/* Form */}
             <div>
-              <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Send us a message</h2>
+              <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Envie uma mensagem</h2>
               {sent && (
                 <div className="mt-6 flex items-start gap-3 rounded-md border border-[var(--brand-lime)]/50 bg-[var(--brand-lime)]/10 p-4 text-sm">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--brand-lime-dim)]" />
                   <div>
                     <p className="font-medium text-[var(--brand-green-dark)]">
-                      Your mail client should be opening now.
+                      Seu programa de e-mail deve estar abrindo agora.
                     </p>
                     <p className="mt-1 text-[var(--text-1)]">
-                      If nothing happens, write to <a href={`mailto:${smts.email}`} className="underline">{smts.email}</a> directly.
+                      Se nada acontecer, escreva direto para <a href={`mailto:${smts.email}`} className="underline">{smts.email}</a>.
                     </p>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export default function Contact() {
 
               <form onSubmit={handleSubmit(onSubmit)} className="mt-8 space-y-5">
                 <div className="grid gap-5 md:grid-cols-2">
-                  <Field label="Name *" error={errors.name?.message}>
+                  <Field label="Nome *" error={errors.name?.message}>
                     <input
                       type="text"
                       {...register("name")}
@@ -92,7 +92,7 @@ export default function Contact() {
                       autoComplete="name"
                     />
                   </Field>
-                  <Field label="Email *" error={errors.email?.message}>
+                  <Field label="E-mail *" error={errors.email?.message}>
                     <input
                       type="email"
                       {...register("email")}
@@ -102,7 +102,7 @@ export default function Contact() {
                   </Field>
                 </div>
                 <div className="grid gap-5 md:grid-cols-2">
-                  <Field label="Company" error={errors.company?.message}>
+                  <Field label="Empresa" error={errors.company?.message}>
                     <input
                       type="text"
                       {...register("company")}
@@ -110,7 +110,7 @@ export default function Contact() {
                       autoComplete="organization"
                     />
                   </Field>
-                  <Field label="Phone" error={errors.phone?.message}>
+                  <Field label="Telefone" error={errors.phone?.message}>
                     <input
                       type="tel"
                       {...register("phone")}
@@ -119,23 +119,23 @@ export default function Contact() {
                     />
                   </Field>
                 </div>
-                <Field label="Interest *" error={errors.interest?.message}>
+                <Field label="Interesse *" error={errors.interest?.message}>
                   <select {...register("interest")} className="input" defaultValue="">
-                    <option value="" disabled>Select…</option>
+                    <option value="" disabled>Selecione…</option>
                     {categories.map((c) => (
                       <option key={c.id} value={c.name}>{c.name}</option>
                     ))}
-                    <option value="Service & Spare Parts">Service & Spare Parts</option>
-                    <option value="Partnership">Partnership</option>
-                    <option value="Other">Other</option>
+                    <option value="Assistência & Peças">Assistência & Peças</option>
+                    <option value="Parceria">Parceria</option>
+                    <option value="Outro">Outro</option>
                   </select>
                 </Field>
-                <Field label="Message *" error={errors.message?.message}>
+                <Field label="Mensagem *" error={errors.message?.message}>
                   <textarea
                     {...register("message")}
                     rows={5}
                     className="input resize-y"
-                    placeholder="PCB design, target volume, timing…"
+                    placeholder="Projeto da PCB, volume desejado, prazo…"
                   />
                 </Field>
 
@@ -145,50 +145,51 @@ export default function Contact() {
                   className="inline-flex items-center gap-2 rounded-md bg-[var(--brand-green)] px-6 py-3 font-display text-sm uppercase tracking-widest text-white hover:bg-[var(--brand-green-light)] transition disabled:opacity-50"
                 >
                   <Mail className="h-4 w-4" />
-                  {isSubmitting ? "Sending…" : "Send via email"}
+                  {isSubmitting ? "Enviando…" : "Enviar por e-mail"}
                 </button>
                 <p className="text-xs text-[var(--text-2)]">
-                  Submitting opens your default mail client with the form pre-filled. We'll wire a server-side form on request.
+                  Ao enviar, abre o seu programa de e-mail com a mensagem preenchida. Podemos
+                  integrar um formulário com envio automático quando quiser.
                 </p>
               </form>
             </div>
 
             {/* Side info */}
             <aside>
-              <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Office</h2>
+              <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Escritório</h2>
               <div className="mt-8 space-y-6">
-                <Info icon={MapPin} title="Address">
+                <Info icon={MapPin} title="Endereço">
                   {smts.address.street}<br />
                   {smts.address.district}<br />
                   {smts.address.city} — {smts.address.state}, {smts.address.zip}<br />
                   {smts.address.country}
                 </Info>
-                <Info icon={Phone} title="Phone">
+                <Info icon={Phone} title="Telefone">
                   <a href={`tel:${smts.phone.replace(/[^+\d]/g, "")}`} className="hover:text-[var(--brand-green)]">
                     {smts.phone}
                   </a>
                   <br />
                   <a href={`tel:${smts.mobile.replace(/[^+\d]/g, "")}`} className="hover:text-[var(--brand-green)]">
-                    {smts.mobile} (mobile)
+                    {smts.mobile} (celular)
                   </a>
                 </Info>
-                <Info icon={Mail} title="Email">
+                <Info icon={Mail} title="E-mail">
                   <a href={`mailto:${smts.email}`} className="hover:text-[var(--brand-green)]">{smts.email}</a>
                 </Info>
-                <Info icon={MessageSquare} title="Contact">
+                <Info icon={MessageSquare} title="Contato">
                   {smts.contact.name}, {smts.contact.role}
                 </Info>
               </div>
 
               <div className="mt-12 rounded-lg border border-[var(--border-c)] bg-[var(--surface-2)] p-6">
                 <p className="font-mono-tech text-xs uppercase tracking-widest text-[var(--brand-lime-dim)]">
-                  Region served
+                  Região atendida
                 </p>
                 <p className="mt-2 font-display text-lg uppercase tracking-wide text-[var(--brand-green)]">
-                  Brazil &amp; Argentina
+                  Brasil &amp; América do Sul
                 </p>
                 <p className="mt-2 text-sm text-[var(--text-1)]">
-                  Official MSTECH partner — direct sales, installation, training and after-sales service.
+                  Venda, instalação, treinamento e assistência técnica dos equipamentos representados.
                 </p>
               </div>
             </aside>

@@ -6,20 +6,13 @@ import { MobileDrawer } from "@/components/nav/MobileDrawer";
 import { Footer } from "@/components/site/SiteFooter";
 import { useUI } from "@/stores/ui";
 
-// Routes that render with the cinematic dark theme
-const DARK_ROUTES = ["/showroom"];
-const DARK_PREFIXES = ["/catalog/"]; // machine detail goes dark; category landing stays light (handled below)
-
 export function AppLayout() {
   const setTheme = useUI((s) => s.setTheme);
   const location = useLocation();
 
+  // Tema claro em todo o site (identidade de marca — sem dark)
   useEffect(() => {
-    const path = location.pathname;
-    const isDetailPage =
-      DARK_PREFIXES.some((p) => path.startsWith(p)) && path.split("/").length > 3;
-    const isShowroom = DARK_ROUTES.includes(path);
-    setTheme(isDetailPage || isShowroom ? "dark" : "light");
+    setTheme("light");
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
   }, [location.pathname, setTheme]);
 

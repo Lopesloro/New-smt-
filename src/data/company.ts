@@ -1,92 +1,117 @@
+// SMTS — SMT Soluções
+// Empresa brasileira (Campinas-SP) que representa e distribui equipamentos de
+// montagem eletrônica, automação e testes na América do Sul.
+// Fonte: manual de marca + LinkedIn (linkedin.com/company/smts).
+
 export const smts = {
-  name: "SMTS",
-  longName: "SMT Soluções",
-  tagline: "Official MSTECH partner in Brazil & Argentina",
+  name: "SMT Solutions",
+  shortName: "SMTS",
+  founded: 2005,
+  experienceYears: 20,
+  region: "América do Sul",
+  city: "Campinas",
+  state: "SP",
+  country: "Brasil",
+  tagline: "Soluções em montagem eletrônica, automação e testes.",
+  description:
+    "A SMTS fornece produtos e serviços para atender às necessidades dos clientes em processos de montagem eletrônica, automação geral e testes. Com profissionais que somam mais de 20 anos de experiência no mercado de alta tecnologia e eletrônica automotiva, atende clientes em todo o Brasil e na América do Sul.",
   address: {
     street: "Av. Dr. Jesuino Marcondes Machado, 2071",
     district: "Chácara da Barra",
     city: "Campinas",
     state: "SP",
     zip: "13090-723",
-    country: "Brazil",
+    country: "Brasil",
   },
   phone: "+55 (19) 3294-8902",
   mobile: "+55 (19) 8102-6737",
   email: "ricardo@smts.com.br",
-  contact: { name: "Ricardo", role: "Administrator" },
+  contact: { name: "Ricardo", role: "Administrador" },
   domain: "smts.com.br",
 };
 
-export const mstech = {
-  name: "MSTECH",
-  founded: 1994,
-  ceo: "MS Choi",
-  capital: "USD 2.5M",
-  employees: 94,
-  hq: "Suwon-Si, Gyeonggi-Do, Republic of Korea",
-  website: "https://www.mstechcorp.kr",
-  slogan: "Pursuit of Perfection",
-  description:
-    "MSTECH is a Korean precision-engineering company founded in 1994, specialized in PCB depaneling systems — bit routers, sawing machines, laser systems and factory automation. Suppliers to Samsung, LG, Nokia, Continental and Flextronics across more than 30 countries.",
-  patents: 20,
-  countries: 30,
-};
-
-export const milestones = [
-  { year: 1994, event: "MSTECH founded in Suwon, South Korea." },
-  { year: 1999, event: "Registered as supplier for Samsung Electronics." },
-  { year: 2002, event: "Developed the Shuttle-X Router System." },
-  { year: 2003, event: "Registered as supplier for LG Electronics." },
-  { year: 2005, event: "Developed Dual In-line Router · ISO 9001:2000 certified." },
-  { year: 2006, event: "R&D Center established · Single In-line Router released." },
-  { year: 2008, event: "Nokia global supplier · BGA Grinding, Sawing & Auto PCB Placing systems launched." },
-  { year: 2010, event: "Continental and Flextronics global supplier registrations." },
-  { year: 2013, event: "All Diagnostic Intelligent Dust Collector developed." },
-  { year: 2015, event: "Auto Tray Function In-Line Router released." },
-  { year: 2017, event: "Moebius System developed." },
-  { year: 2019, event: "DCB Snap Breaking system." },
-  { year: 2021, event: "Metal (Aluminum) Router · Universal Router System." },
-  { year: 2023, event: "Hybrid Router combining Bit, Sawing and Laser." },
+// O que a SMTS entrega
+export const smtsServices = [
+  "Representação e venda de equipamentos para montagem eletrônica (SMT)",
+  "Automação industrial e linhas de produção",
+  "Sistemas de inspeção e testes",
+  "Geração de oxigênio e nitrogênio",
+  "Importação e exportação de equipamentos",
+  "Instalação, treinamento e suporte pós-venda",
 ];
 
-export const certifications = [
-  "ISO 9001",
-  "CE Certificate",
-  "R&D Center Authorization (Korean Government)",
-  "Small Giant Company",
-  "Venture Company",
-  "INNO Biz",
-  "Presidential Award",
-  "World-Class Product Award",
+// Números que representam a SMTS
+export const smtsStats = [
+  { n: "2005", l: "Fundação" },
+  { n: "20+", l: "Anos de experiência" },
+  { n: "América do Sul", l: "Atuação" },
+  { n: "6+", l: "Marcas representadas" },
 ];
 
-export const globalNetwork = {
-  asia: [
-    { country: "Korea (HQ)", partner: "MSTECH" },
-    { country: "China", partner: "Sigmatek" },
-    { country: "Vietnam", partner: "WKK" },
-    { country: "India", partner: "Innotronics, Bergen Systems" },
-    { country: "Indonesia / Malaysia / Thailand", partner: "Premtronic, WKK" },
-    { country: "Singapore", partner: "WKK" },
-    { country: "Philippines", partner: "Maxtronics, Elitech" },
-  ],
-  europe: [
-    { country: "Spain, Germany, Portugal, Italy, France, Hungary, Poland, UK", partner: "MSTECH Europe" },
-    { country: "Romania", partner: "LTHD" },
-    { country: "Czech Republic, Slovakia", partner: "PBT" },
-    { country: "Russia", partner: "SMT Technology" },
-  ],
-  americas: [
-    { country: "Mexico, USA", partner: "SMT America" },
-    { country: "Brazil, Argentina", partner: "SMTS / SMT Soluções" },
-  ],
-};
+export const smtsValues = [
+  {
+    title: "Experiência",
+    text: "Mais de 20 anos de mercado em alta tecnologia e eletrônica automotiva.",
+  },
+  {
+    title: "Representação oficial",
+    text: "Parcerias diretas com fabricantes líderes mundiais em montagem eletrônica.",
+  },
+  {
+    title: "Suporte completo",
+    text: "Da especificação à instalação, treinamento e assistência técnica.",
+  },
+  {
+    title: "Alcance regional",
+    text: "Atendimento a clientes em todo o Brasil e na América do Sul.",
+  },
+];
+
+// Fabricantes representados pela SMTS
+export const representedBrands = [
+  {
+    name: "MSTECH",
+    country: "Coreia do Sul",
+    focus: "Depaneling (router, serra e laser) e automação fabril",
+    website: "https://www.mstechcorp.co.kr",
+  },
+  {
+    name: "Yamaha Robotics",
+    country: "Japão",
+    focus: "Linha SMT completa — mounters, printers, dispensers e inspeção",
+    website: "https://www.yamaha-motor.com/robotics/",
+  },
+  {
+    name: "Tamura",
+    country: "Japão",
+    focus: "Fornos de refusão (reflow)",
+    website: "https://www.tamura-ss.co.jp/en/",
+  },
+  {
+    name: "Sawa",
+    country: "Japão",
+    focus: "Lavadoras de estêncil e nozzles",
+    website: "https://www.sawa-corp.co.jp/en/",
+  },
+  {
+    name: "Xavis",
+    country: "Coreia do Sul",
+    focus: "Inspeção por Raio-X industrial",
+    website: "http://www.xavisxray.com/",
+  },
+  {
+    name: "Eunil",
+    country: "Coreia do Sul",
+    focus: "Marcação a laser, conformal coating e handling de PCB",
+    website: "https://www.eunil.com/",
+  },
+];
 
 export const customerSegments = [
-  "Semiconductor",
+  "Semicondutores",
   "Mobile",
-  "Automotive",
-  "Electronic parts",
+  "Automotivo",
+  "Componentes eletrônicos",
   "EMS",
-  "Appliance",
+  "Linha branca",
 ];
