@@ -71,7 +71,7 @@ export default function MachineDetail() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
-                  to="/contact"
+                  to={`/contact?machine=${encodeURIComponent(machine.name)}`}
                   className="inline-flex items-center gap-2 rounded-md bg-[var(--brand-green)] px-5 py-2.5 font-display text-xs uppercase tracking-widest text-white hover:bg-[var(--brand-green-light)] transition"
                 >
                   Request quote <ArrowRight className="h-4 w-4" />
@@ -152,10 +152,7 @@ export default function MachineDetail() {
       {/* Specs */}
       <section className="border-b border-[var(--border-c)]">
         <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-12 lg:py-20">
-          <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">Specifications</h2>
-          <div className="mt-6">
-            <SpecsTable specs={machine.specs} machineName={machine.name} />
-          </div>
+          <SpecsTable specs={machine.specs} machineName={machine.name} />
         </div>
       </section>
 

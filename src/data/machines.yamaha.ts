@@ -44,6 +44,13 @@ export const yamahaMachines: Machine[] = [
     description:
       "A flexible, high-throughput stencil printer that balances accuracy and changeover speed for diverse production lines.",
     applications: ["EMS", "Electronic parts"],
+    specs: [
+      { label: "Applicable PCB size", value: "50×50 – 510×510 mm" },
+      { label: "Printing accuracy", value: "±16 μm (Cpk ≥ 2.0)" },
+      { label: "Positioning repeatability", value: "±8 μm (±6σ)" },
+      { label: "Cycle time", value: "6 s" },
+      { label: "Dimensions (W×D×H)", value: "1,840 × 1,640 × 1,525 mm" },
+    ],
     media: { poster: PLACEHOLDER, gallery: [], video: { kind: "file", src: "/videos/yrp10.mp4" } },
   }),
 
@@ -58,6 +65,13 @@ export const yamahaMachines: Machine[] = [
     description:
       "The YRM20 combines high placement speed with the flexibility to handle a wide component range, anchoring Yamaha's 1 STOP SMART SOLUTION line.",
     applications: ["Mobile", "Automotive", "EMS", "Appliance"],
+    specs: [
+      { label: "Placement speed (optimum)", value: "115,000 CPH" },
+      { label: "Placement accuracy", value: "±0.025 mm (Cpk ≥ 1.0)" },
+      { label: "Applicable PCB size", value: "50×50 – 810×510 mm" },
+      { label: "Component range", value: "0201 – 55×100 mm" },
+      { label: "Heads", value: "RM rotary / HM multi / FM flexible" },
+    ],
     media: { poster: PLACEHOLDER, gallery: [], video: { kind: "file", src: "/videos/yrm20.mp4" } },
     featured: true,
   }),
@@ -133,6 +147,13 @@ export const yamahaMachines: Machine[] = [
     description:
       "Automated optical inspection delivering reliable defect detection across the assembled board.",
     applications: ["Automotive", "EMS", "Electronic parts"],
+    specs: [
+      { label: "Camera", value: "20 MP angle cameras" },
+      { label: "Inspection resolution", value: "5 / 7 / 12 μm" },
+      { label: "Inspection speed (optimum)", value: "56.8 cm²/s" },
+      { label: "Optics", value: "8-way projectors + 4-way oblique imaging" },
+      { label: "Smallest component", value: "0201 (0.25 × 0.125 mm)" },
+    ],
     media: { poster: PLACEHOLDER, gallery: [], video: { kind: "file", src: "/videos/yri-v.mp4" } },
   }),
   base({

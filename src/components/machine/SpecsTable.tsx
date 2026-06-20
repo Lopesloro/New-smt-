@@ -30,11 +30,14 @@ export function SpecsTable({ specs, machineName }: Props) {
 
   return (
     <div className="overflow-hidden rounded-lg border border-[var(--border-c)]">
+      <div className="bg-[var(--brand-green)] px-5 py-3 font-display text-sm uppercase tracking-wide text-white">
+        Specifications
+      </div>
       <table className="w-full">
         <tbody>
           {specs.map((s, i) => (
             <tr key={s.label} className={i % 2 ? "bg-[var(--surface-2)]" : ""}>
-              <th className="w-1/3 px-5 py-3 text-left font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">
+              <th className="w-2/5 px-5 py-3 text-left font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">
                 {s.label}
               </th>
               <td className="px-5 py-3 text-sm text-[var(--text-0)]">{s.value}</td>

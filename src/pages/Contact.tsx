@@ -233,6 +233,25 @@ export default function Contact() {
                   Sales, installation, training and after-sales service for the represented equipment.
                 </p>
               </div>
+
+              <a
+                href={`https://wa.me/${smts.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#25D366] px-5 py-3 font-display text-sm uppercase tracking-widest text-white hover:opacity-90 transition"
+              >
+                <MessageSquare className="h-5 w-5" /> Chat on WhatsApp
+              </a>
+
+              <div className="mt-6 overflow-hidden rounded-lg border border-[var(--border-c)]">
+                <iframe
+                  title="SMTS location — Campinas-SP"
+                  src="https://www.google.com/maps?q=Campinas%20SP%20Brazil&output=embed"
+                  className="h-56 w-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </aside>
           </div>
         </div>
