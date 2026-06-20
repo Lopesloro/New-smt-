@@ -50,7 +50,7 @@ export default function Home() {
           muted
           playsInline
           preload="auto"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-contain"
         />
       </section>
 
