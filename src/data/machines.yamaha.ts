@@ -44,6 +44,7 @@ export const yamahaMachines: Machine[] = [
     description:
       "A flexible, high-throughput stencil printer that balances accuracy and changeover speed for diverse production lines.",
     applications: ["EMS", "Electronic parts"],
+    media: { poster: PLACEHOLDER, gallery: [], video: { kind: "file", src: "/videos/yrp10.mp4" } },
   }),
 
   // ===== SURFACE MOUNTERS =====
@@ -57,6 +58,7 @@ export const yamahaMachines: Machine[] = [
     description:
       "The YRM20 combines high placement speed with the flexibility to handle a wide component range, anchoring Yamaha's 1 STOP SMART SOLUTION line.",
     applications: ["Mobile", "Automotive", "EMS", "Appliance"],
+    media: { poster: PLACEHOLDER, gallery: [], video: { kind: "file", src: "/videos/yrm20.mp4" } },
     featured: true,
   }),
   base({
@@ -105,6 +107,7 @@ export const yamahaMachines: Machine[] = [
     description:
       "Dispensing system for adhesive, underfill and other fluids, integrated into the Yamaha SMT line.",
     applications: ["Automotive", "EMS"],
+    media: { poster: PLACEHOLDER, gallery: [], video: { kind: "file", src: "/videos/yrm-d.mp4" } },
   }),
 
   // ===== INSPECTION =====
@@ -130,6 +133,7 @@ export const yamahaMachines: Machine[] = [
     description:
       "Automated optical inspection delivering reliable defect detection across the assembled board.",
     applications: ["Automotive", "EMS", "Electronic parts"],
+    media: { poster: PLACEHOLDER, gallery: [], video: { kind: "file", src: "/videos/yri-v.mp4" } },
   }),
   base({
     slug: "ysi-x",
