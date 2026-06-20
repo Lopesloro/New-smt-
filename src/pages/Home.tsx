@@ -41,46 +41,17 @@ export default function Home() {
         </script>
       </Helmet>
 
-      {/* Hero — full screen, SMT Solutions brand */}
-      <section className="relative isolate flex min-h-screen items-center overflow-hidden bg-[var(--brand-green-dark)] text-white">
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(152,215,20,0.22),transparent_55%),radial-gradient(circle_at_85%_80%,rgba(0,107,71,0.6),transparent_60%)]" />
-          <div
-            className="absolute inset-0 opacity-[0.06]"
-            style={{
-              backgroundImage:
-                "linear-gradient(var(--brand-lime) 1px, transparent 1px), linear-gradient(90deg, var(--brand-lime) 1px, transparent 1px)",
-              backgroundSize: "48px 48px",
-            }}
-          />
-        </div>
-
-        <div className="mx-auto w-full max-w-[1280px] px-6 py-32 lg:px-12">
-          <p className="font-display text-xs uppercase tracking-[0.18em] text-[var(--brand-lime)]">
-            SMT Solutions · Brazil &amp; South America
-          </p>
-          <h1 className="mt-6 max-w-4xl font-display text-4xl uppercase leading-[1.05] tracking-tight text-white md:text-6xl lg:text-7xl">
-            Complete solutions for electronic assembly.
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/85">
-            Equipment, automation and testing from the world's leading manufacturers — backed by
-            20+ years of experience in high technology and automotive electronics.
-          </p>
-          <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Link
-              to="/catalog"
-              className="inline-flex items-center gap-2 rounded-md bg-[var(--brand-lime)] px-6 py-3 font-display text-sm uppercase tracking-wider text-[var(--brand-green-dark)] hover:bg-[var(--brand-lime-bright)] transition"
-            >
-              Explore catalog <ArrowRight className="h-4 w-4" />
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 rounded-md border border-white/40 px-6 py-3 font-display text-sm uppercase tracking-wider text-white hover:bg-white/10 transition"
-            >
-              Talk to us
-            </Link>
-          </div>
-        </div>
+      {/* Hero — full-screen video, nothing on top */}
+      <section className="relative h-screen w-full overflow-hidden bg-black">
+        <video
+          src="/videos/overview.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
       </section>
 
       {/* Pillars */}
@@ -104,45 +75,6 @@ export default function Home() {
                 <p className="mt-2 text-sm leading-relaxed text-[var(--text-1)]">{p.text}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 3D highlight — pick-and-place animation */}
-      <section className="bg-[var(--surface-2)] py-24 lg:py-32 [perspective:1500px]">
-        <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
-              <p className="font-mono-tech text-xs uppercase tracking-widest text-[var(--brand-lime-dim)]">
-                Technology in motion
-              </p>
-              <h2 className="mt-2 font-display text-2xl uppercase tracking-tight md:text-4xl">
-                See assembly in action
-              </h2>
-              <p className="mt-4 max-w-md leading-relaxed text-[var(--text-1)]">
-                A pick &amp; place animation — the precision and speed that define modern
-                electronic assembly lines.
-              </p>
-              <Link
-                to="/catalog"
-                className="mt-8 inline-flex items-center gap-2 rounded-md bg-[var(--brand-green)] px-6 py-3 font-display text-sm uppercase tracking-wider text-white hover:bg-[var(--brand-green-light)] transition"
-              >
-                Explore catalog <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-
-            <div className="group [transform-style:preserve-3d] [transform:rotateY(-14deg)_rotateX(6deg)] transition-transform duration-500 hover:[transform:rotateY(0deg)_rotateX(0deg)]">
-              <div className="overflow-hidden rounded-xl border border-[var(--border-c)] bg-black shadow-2xl shadow-[var(--brand-green)]/20">
-                <video
-                  src="/videos/pick-and-place.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="aspect-video h-full w-full object-cover"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
