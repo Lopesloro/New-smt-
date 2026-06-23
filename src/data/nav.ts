@@ -14,21 +14,21 @@ export type NavItem = NavLeaf | NavGroup;
 export const isNavGroup = (item: NavItem): item is NavGroup =>
   (item as NavGroup).children !== undefined;
 
+import { categories } from "./categories";
+
+// Catalog submenu = every family/category, generated from the catalog data.
+const catalogChildren: NavLeaf[] = categories.map((c) => ({
+  label: c.name,
+  to: `/catalog/${c.slug}`,
+}));
+
 export const navItems: NavItem[] = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   {
     key: "catalog",
     label: "Catalog",
-    children: [
-      { label: "Surface Mounters", to: "/catalog/surface-mounters" },
-      { label: "Printers", to: "/catalog/printers" },
-      { label: "Dispensers", to: "/catalog/dispensers" },
-      { label: "Inspection", to: "/catalog/inspection" },
-      { label: "Hybrid Placer", to: "/catalog/hybrid-placer" },
-      { label: "Software", to: "/catalog/software" },
-      { label: "Feeders & Storage", to: "/catalog/accessories" },
-    ],
+    children: catalogChildren,
   },
   { label: "Showroom", to: "/showroom" },
   { label: "Resources", to: "/resources" },
