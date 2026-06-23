@@ -1,6 +1,7 @@
 import type { Machine } from "./types";
 import { yamahaMachines } from "./machines.yamaha";
 import { mstechMachines } from "./machines.mstech";
+import { extraMachines } from "./machines.extra";
 
 /**
  * Equipment catalog — single source of truth (generic; brand not shown in UI).
@@ -9,6 +10,7 @@ import { mstechMachines } from "./machines.mstech";
 export const machines: Machine[] = [
   ...yamahaMachines,
   ...mstechMachines.map((m) => ({ ...m, brand: "mstech" as const })),
+  ...extraMachines,
 ];
 
 export const getMachine = (slug: string) => machines.find((m) => m.slug === slug);

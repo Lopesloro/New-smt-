@@ -143,9 +143,39 @@ export const categories: Category[] = [
     slug: "conveyors",
     brand: "eunil",
     name: "Conveyors & Handling",
-    tagline: "Loaders, buffers, conveyors and coating.",
+    tagline: "Loaders, buffers, conveyors and handling.",
     description:
-      "PCB handling across the line — loaders, unloaders, buffers, conveyors, conformal coating and wafer handling.",
+      "PCB handling across the line — loaders, unloaders, buffers, conveyors and wafer handling.",
+    hasSubcategories: false,
+  },
+  {
+    id: "coating",
+    slug: "coating",
+    brand: "eunil",
+    name: "Conformal Coating",
+    tagline: "In-line and off-line coating.",
+    description:
+      "Conformal coating systems that protect assembled boards against moisture, dust and contaminants.",
+    hasSubcategories: false,
+  },
+  {
+    id: "cleaning",
+    slug: "cleaning",
+    brand: "sawa",
+    name: "Cleaning Systems",
+    tagline: "Stencil and nozzle cleaning.",
+    description:
+      "Cleaning and checking systems for stencils, screen masks and nozzles, keeping the line contamination-free.",
+    hasSubcategories: false,
+  },
+  {
+    id: "xray",
+    slug: "xray",
+    brand: "xavis",
+    name: "X-ray Inspection",
+    tagline: "Industrial X-ray for hidden joints.",
+    description:
+      "Industrial X-ray inspection for BGA, hidden solder joints, semiconductors, batteries and automotive parts.",
     hasSubcategories: false,
   },
 ];

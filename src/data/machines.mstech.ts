@@ -22,7 +22,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     ],
     options: ["ATC (Auto Tool Change)", "MES Interface", "Auto Scrap Picker", "Fixture ID Recognition", "Cutting Inspection"],
     applications: ["Mobile", "Automotive", "EMS", "Appliance"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Mobile, Automotive, EMS, Appliance"}],
     media: {
       poster: "/machines/idpl-d/poster.jpg",
       gallery: ["/machines/idpl-d/gallery/01.jpg", "/machines/idpl-d/gallery/02.jpg", "/machines/idpl-d/gallery/03.jpg"],
@@ -51,7 +51,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     ],
     options: ["MES Interface", "Vision System", "Fixture ID Recognition"],
     applications: ["Electronic parts", "EMS"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Electronic parts, EMS"}],
     media: {
       poster: "/machines/idpl-st/poster.jpg",
       gallery: ["/machines/idpl-st/gallery/01.jpg", "/machines/idpl-st/gallery/02.jpg", "/machines/idpl-st/gallery/03.jpg"],
@@ -105,7 +105,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     ],
     options: ["Vision System", "Bit Broken Detection", "MES Interface", "Fixture ID Recognition"],
     applications: ["Appliance", "Electronic parts"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Appliance, Electronic parts"}],
     media: {
       poster: "/machines/idpl-t/poster.jpg",
       gallery: ["/machines/idpl-t/gallery/01.jpg", "/machines/idpl-t/gallery/02.jpg", "/machines/idpl-t/gallery/03.png"],
@@ -134,7 +134,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     ],
     options: ["MES Interface", "Vision System"],
     applications: ["Mobile", "Automotive"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Mobile, Automotive"}],
     media: {
       poster: "/machines/idpl-u/poster.jpg",
       gallery: ["/machines/idpl-u/gallery/01.jpg", "/machines/idpl-u/gallery/02.jpg"],
@@ -211,7 +211,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     ],
     options: ["ATC", "MES Interface", "Auto Scrap Picker", "Fixture ID Recognition", "Cutting Inspection", "Tool Verify"],
     applications: ["Mobile", "Electronic parts"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "Mobile, Electronic parts"}],
     media: {
       poster: "/machines/mdpl-t/poster.jpg",
       gallery: ["/machines/mdpl-t/gallery/01.jpg", "/machines/mdpl-t/gallery/02.jpg"],
@@ -234,7 +234,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     features: ["Single-table off-line operation", "Optional dual spindle", "Compact form factor", "Vision-system ready"],
     options: ["Dual Spindle", "Vision System", "MES Interface"],
     applications: ["Electronic parts", "EMS"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "Electronic parts, EMS"}],
     media: {
       poster: "/machines/ndpl-s/poster.jpg",
       gallery: ["/machines/ndpl-s/gallery/01.jpg", "/machines/ndpl-s/gallery/02.jpg", "/machines/ndpl-s/gallery/03.jpg"],
@@ -262,7 +262,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     ],
     options: ["ATC", "Bit Diameter Detection", "Auto Brush Change System", "Cutting Inspection", "MES Interface"],
     applications: ["EMS", "Prototyping", "Job-shop"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "EMS, Prototyping, Job-shop"}],
     media: {
       poster: "/machines/cdpl-s/poster.jpg",
       gallery: ["/machines/cdpl-s/gallery/01.jpg"],
@@ -285,7 +285,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     features: ["Single table, in-line conveyor", "Diamond-coated saw blade", "Integrated dust collection"],
     options: ["Vision System", "MES Interface"],
     applications: ["Automotive", "Appliance"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Sawing System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Automotive, Appliance"}],
     media: {
       poster: "/machines/idpl-sw/poster.png",
       gallery: ["/machines/idpl-sw/gallery/01.png"],
@@ -311,7 +311,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     ],
     options: ["MES Interface", "Auto Scrap Pickup"],
     applications: ["Automotive", "Appliance"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Sawing System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Automotive, Appliance"}],
     media: {
       poster: "/machines/idpl-tw/poster.jpg",
       gallery: ["/machines/idpl-tw/gallery/01.jpg"],
@@ -332,7 +332,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     features: ["Single-table off-line", "Diamond-coated saw blade", "Vision-system capable"],
     options: ["Vision System", "Dust Collector upgrade"],
     applications: ["Automotive", "Electronic parts"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Sawing System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "Automotive, Electronic parts"}],
     media: {
       poster: "/machines/ndpl-sw/poster.jpg",
       gallery: ["/machines/ndpl-sw/gallery/01.jpg", "/machines/ndpl-sw/gallery/02.jpg", "/machines/ndpl-sw/gallery/03.jpg"],
@@ -387,7 +387,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     features: ["Single-table off-line operation", "Multiple laser-source options", "Advanced vision system"],
     options: ["MES Interface", "Barcode Reader"],
     applications: ["Mobile", "Semiconductor", "Medical"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Laser System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "Mobile, Semiconductor, Medical"}],
     media: {
       poster: "/machines/ls-nun-s/poster.png",
       gallery: ["/machines/ls-nun-s/gallery/01.png"],
@@ -521,7 +521,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     features: ["Fiducial mark recognition", "Edge detection", "Cutting inspection", "Available on most systems"],
     options: ["MES Interface"],
     applications: ["All depaneling lines"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Others & Support"}, {"label": "Configuration", "value": "Support"}, {"label": "Applications", "value": "All depaneling lines"}],
     media: {
       poster: "/machines/vision-inspection/poster.jpg",
       gallery: ["/machines/vision-inspection/gallery/01.jpg", "/machines/vision-inspection/gallery/02.jpg", "/machines/vision-inspection/gallery/03.jpg"],
@@ -540,7 +540,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     features: ["Sealed-housing leak detection", "Integration with line monitoring"],
     options: [],
     applications: ["Automotive", "Appliance"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Others & Support"}, {"label": "Configuration", "value": "Support"}, {"label": "Applications", "value": "Automotive, Appliance"}],
     media: {
       poster: "/machines/leak-test/poster.jpg",
       gallery: ["/machines/leak-test/gallery/01.jpg"],
@@ -559,7 +559,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     features: ["Real-time production tracking", "Quality monitoring dashboards", "MES interface"],
     options: ["Custom integrations on request"],
     applications: ["All depaneling lines"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Others & Support"}, {"label": "Configuration", "value": "Support"}, {"label": "Applications", "value": "All depaneling lines"}],
     media: {
       poster: "/machines/lms/poster.jpg",
       gallery: ["/machines/lms/gallery/01.jpg"],
@@ -578,7 +578,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     features: ["Custom factory automation", "Automotive industry focused", "End-to-end engineering"],
     options: [],
     applications: ["Automotive"],
-    specs: [],
+    specs: [{"label": "Category", "value": "Others & Support"}, {"label": "Configuration", "value": "Support"}, {"label": "Applications", "value": "Automotive"}],
     media: {
       poster: "/machines/automobile-line/poster.jpg",
       gallery: ["/machines/automobile-line/gallery/01.jpg", "/machines/automobile-line/gallery/02.jpg", "/machines/automobile-line/gallery/03.jpg"],

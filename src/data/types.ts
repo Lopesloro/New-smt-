@@ -23,7 +23,11 @@ export type CategoryId =
   // Reflow & handling
   | "reflow"
   | "traceability"
-  | "conveyors";
+  | "conveyors"
+  | "coating"
+  // Cleaning & X-ray
+  | "cleaning"
+  | "xray";
 
 export type Subcategory = "in-line" | "off-line" | "support" | "standard";
 
