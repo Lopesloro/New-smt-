@@ -152,7 +152,7 @@ export default function MachineDetail() {
       {/* Specs */}
       <section className="border-b border-[var(--border-c)]">
         <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-12 lg:py-20">
-          <SpecsTable specs={machine.specs} machineName={machine.name} />
+          <SpecsTable specs={machine.specs} sections={machine.specSections} machineName={machine.name} />
         </div>
       </section>
 
