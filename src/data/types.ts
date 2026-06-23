@@ -1,19 +1,29 @@
 export type BrandId =
   | "yamaha"
+  | "mstech"
   | "tamura"
   | "sawa"
   | "xavis"
   | "eunil";
 
 export type CategoryId =
-  // Yamaha
+  // Placement / printing / inspection
   | "surface-mounters"
   | "printers"
   | "dispensers"
   | "inspection"
   | "hybrid-placer"
   | "software"
-  | "accessories";
+  | "accessories"
+  // Depaneling & support
+  | "bit-router"
+  | "sawing"
+  | "laser"
+  | "others"
+  // Reflow & handling
+  | "reflow"
+  | "traceability"
+  | "conveyors";
 
 export type Subcategory = "in-line" | "off-line" | "support" | "standard";
 

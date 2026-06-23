@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowRight, Cpu, ScanLine, Layers, Boxes } from "lucide-react";
-import { smtsStats, representedBrands } from "@/data/company";
+import { smtsStats } from "@/data/company";
+
+const capabilities = ["Placement", "Printing", "Inspection", "Depaneling", "Reflow", "Marking", "Handling"];
 
 const pillars = [
   { icon: Cpu, title: "Electronic assembly", text: "SMT equipment for printing, placement and reflow — from the world's leading manufacturers." },
@@ -95,14 +97,14 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Represented brands */}
+          {/* Capabilities */}
           <div className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
-            {representedBrands.map((b) => (
+            {capabilities.map((c) => (
               <span
-                key={b.name}
+                key={c}
                 className="font-display text-lg uppercase tracking-wide text-[var(--text-2)]"
               >
-                {b.name}
+                {c}
               </span>
             ))}
           </div>

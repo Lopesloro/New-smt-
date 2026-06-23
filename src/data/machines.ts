@@ -1,13 +1,14 @@
 import type { Machine } from "./types";
 import { yamahaMachines } from "./machines.yamaha";
+import { mstechMachines } from "./machines.mstech";
 
 /**
- * Equipment catalog — single source of truth.
- * SMT Solutions (SMTS) represents the brands below. Add new brands by creating
- * a machines.<brand>.ts file and spreading it here.
+ * Equipment catalog — single source of truth (generic; brand not shown in UI).
+ * Add new groups by creating a machines.<group>.ts file and spreading it here.
  */
 export const machines: Machine[] = [
   ...yamahaMachines,
+  ...mstechMachines.map((m) => ({ ...m, brand: "mstech" as const })),
 ];
 
 export const getMachine = (slug: string) => machines.find((m) => m.slug === slug);

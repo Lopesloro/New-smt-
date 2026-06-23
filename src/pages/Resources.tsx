@@ -2,7 +2,8 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Mail, FileText } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
-import { smts, representedBrands } from "@/data/company";
+import { smts } from "@/data/company";
+import { categories } from "@/data/categories";
 
 export default function Resources() {
   return (
@@ -57,26 +58,24 @@ export default function Resources() {
         </div>
       </section>
 
-      {/* Brands */}
+      {/* Categories */}
       <section className="bg-[var(--surface-2)] py-20 lg:py-24">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           <h2 className="font-display text-xl uppercase tracking-tight md:text-2xl">
-            Documentation by brand
+            Documentation by line
           </h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {representedBrands.map((b) => (
-              <a
-                key={b.id}
-                href={b.website}
-                target="_blank"
-                rel="noopener noreferrer"
+            {categories.map((c) => (
+              <Link
+                key={c.id}
+                to={`/catalog/${c.slug}`}
                 className="rounded-lg border border-[var(--border-c)] bg-[var(--surface-1)] p-6 transition-colors hover:border-[var(--brand-lime)]"
               >
                 <h3 className="font-display text-lg uppercase tracking-wide text-[var(--brand-green)]">
-                  {b.name}
+                  {c.name}
                 </h3>
-                <p className="mt-2 text-sm text-[var(--text-1)]">{b.focus}</p>
-              </a>
+                <p className="mt-2 text-sm text-[var(--text-1)]">{c.tagline}</p>
+              </Link>
             ))}
           </div>
         </div>

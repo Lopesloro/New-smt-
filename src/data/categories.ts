@@ -72,6 +72,82 @@ export const categories: Category[] = [
       "Intelligent feeders, storage systems and accessories that keep the SMT line fed and organized.",
     hasSubcategories: false,
   },
+
+  // ===== Depaneling & support =====
+  {
+    id: "bit-router",
+    slug: "bit-router",
+    brand: "mstech",
+    name: "Bit Router System",
+    tagline: "High-precision depaneling routers.",
+    description:
+      "Bit-based depaneling for high-precision PCB separation. In-line and off-line variants for every production scenario.",
+    hasSubcategories: true,
+  },
+  {
+    id: "sawing",
+    slug: "sawing",
+    brand: "mstech",
+    name: "Sawing System",
+    tagline: "Diamond-blade cutting for straight-line depaneling.",
+    description:
+      "Sawing depanelers for PCBs with long, linear cut paths, with dual-side dust extraction for clean edges.",
+    hasSubcategories: true,
+  },
+  {
+    id: "laser",
+    slug: "laser",
+    brand: "mstech",
+    name: "Laser System",
+    tagline: "Contact-free depaneling for sensitive substrates.",
+    description:
+      "Laser depaneling for flexible circuits, ceramics and materials where mechanical cutting is not viable.",
+    hasSubcategories: false,
+  },
+  {
+    id: "others",
+    slug: "others",
+    brand: "mstech",
+    name: "Others & Support",
+    tagline: "Auxiliary systems and factory automation.",
+    description:
+      "Auto tray handling, dust collection, vision inspection, line monitoring and particle inspection.",
+    hasSubcategories: false,
+  },
+
+  // ===== Reflow =====
+  {
+    id: "reflow",
+    slug: "reflow",
+    brand: "tamura",
+    name: "Reflow Ovens",
+    tagline: "Precise thermal profiling for soldering.",
+    description:
+      "Reflow soldering ovens with multi-zone thermal control for stable, repeatable solder joints.",
+    hasSubcategories: false,
+  },
+
+  // ===== Marking & handling =====
+  {
+    id: "traceability",
+    slug: "traceability",
+    brand: "eunil",
+    name: "Marking & Traceability",
+    tagline: "Laser marking, inkjet and labeling.",
+    description:
+      "Laser markers, inkjet markers and labeling systems for end-to-end PCB traceability.",
+    hasSubcategories: false,
+  },
+  {
+    id: "conveyors",
+    slug: "conveyors",
+    brand: "eunil",
+    name: "Conveyors & Handling",
+    tagline: "Loaders, buffers, conveyors and coating.",
+    description:
+      "PCB handling across the line — loaders, unloaders, buffers, conveyors, conformal coating and wafer handling.",
+    hasSubcategories: false,
+  },
 ];
 
 export const getCategory = (slug: string) =>

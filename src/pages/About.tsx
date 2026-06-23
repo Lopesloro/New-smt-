@@ -6,9 +6,9 @@ import {
   smtsStats,
   smtsValues,
   smtsServices,
-  representedBrands,
   customerSegments,
 } from "@/data/company";
+import { categories } from "@/data/categories";
 
 const statIcons = [Users, Award, Globe, Wrench];
 
@@ -117,30 +117,25 @@ export default function About() {
         </div>
       </section>
 
-      {/* Represented brands */}
+      {/* Product lines */}
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           <h2 className="font-display text-2xl uppercase tracking-tight md:text-3xl">
-            Brands we represent
+            Product lines
           </h2>
           <p className="mt-3 max-w-2xl text-[var(--text-1)]">
-            Partnerships with world-leading manufacturers in electronic assembly, inspection and automation.
+            A complete range for electronic assembly, inspection, depaneling and automation.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {representedBrands.map((b) => (
+            {categories.map((c) => (
               <div
-                key={b.name}
+                key={c.id}
                 className="rounded-lg border border-[var(--border-c)] bg-[var(--surface-1)] p-6"
               >
-                <div className="flex items-center justify-between">
-                  <h3 className="font-display text-lg uppercase tracking-wide text-[var(--brand-green)]">
-                    {b.name}
-                  </h3>
-                  <span className="font-mono-tech text-[10px] uppercase tracking-widest text-[var(--text-2)]">
-                    {b.country}
-                  </span>
-                </div>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--text-1)]">{b.focus}</p>
+                <h3 className="font-display text-lg uppercase tracking-wide text-[var(--brand-green)]">
+                  {c.name}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-[var(--text-1)]">{c.tagline}</p>
               </div>
             ))}
           </div>
