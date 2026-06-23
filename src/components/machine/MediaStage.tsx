@@ -1,8 +1,7 @@
 import { useRef, useState } from "react";
-import { Image as ImageIcon, Play, RotateCw } from "lucide-react";
+import { Image as ImageIcon, Play } from "lucide-react";
 import type { MachineMedia, Hotspot } from "@/data/types";
 import { HotspotOverlay } from "./HotspotOverlay";
-import { Carousel360 } from "./Carousel360";
 
 interface Props {
   media: MachineMedia;
@@ -10,19 +9,17 @@ interface Props {
   alt: string;
 }
 
-type Tab = "photo" | "video" | "360";
+type Tab = "photo" | "video";
 
 export function MediaStage({ media, hotspots, alt }: Props) {
   const video = media.video;
   const hasVideo = Boolean(video);
-  const has360 = Boolean(media.rotation360?.frames?.length);
   const [tab, setTab] = useState<Tab>("photo");
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const tabs: { id: Tab; label: string; icon: typeof ImageIcon; enabled: boolean }[] = [
     { id: "photo", label: "Photo", icon: ImageIcon, enabled: true },
     { id: "video", label: "Video", icon: Play, enabled: hasVideo },
-    { id: "360", label: "360°", icon: RotateCw, enabled: has360 },
   ];
 
   return (
@@ -55,7 +52,6 @@ export function MediaStage({ media, hotspots, alt }: Props) {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           />
         )}
-        {tab === "360" && has360 && <Carousel360 frames={media.rotation360!.frames} />}
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
