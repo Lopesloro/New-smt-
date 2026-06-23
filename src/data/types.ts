@@ -22,6 +22,12 @@ export interface Spec {
   value: string;
 }
 
+export interface SpecSection {
+  title: string;
+  headers: string[];
+  rows: string[][];
+}
+
 export interface Hotspot {
   x: number; // 0..1
   y: number; // 0..1
@@ -49,6 +55,7 @@ export interface Machine {
   options: string[];
   applications: string[];
   specs: Spec[];
+  specSections?: SpecSection[];
   media: MachineMedia;
   hotspots: Hotspot[];
   featured?: boolean;
