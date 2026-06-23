@@ -39,19 +39,20 @@ export function MediaStage({ media, hotspots, alt }: Props) {
             ref={videoRef}
             src={video.src}
             poster={media.poster}
-            controls
+            autoPlay
+            muted
+            loop
             playsInline
-            preload="metadata"
-            className="h-full w-full bg-black"
+            preload="auto"
+            className="h-full w-full bg-black object-cover"
           />
         )}
         {tab === "video" && video?.kind === "youtube" && (
           <iframe
-            src={`https://www.youtube.com/embed/${video.id}`}
+            src={`https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&mute=1&loop=1&playlist=${video.id}&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&playsinline=1`}
             title={alt}
-            className="h-full w-full bg-black"
+            className="pointer-events-none h-full w-full bg-black"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
           />
         )}
         {tab === "360" && has360 && <Carousel360 frames={media.rotation360!.frames} />}
