@@ -13,7 +13,8 @@ interface Props {
 type Tab = "photo" | "video" | "360";
 
 export function MediaStage({ media, hotspots, alt }: Props) {
-  const hasVideo = Boolean(media.video);
+  const video = media.video;
+  const hasVideo = Boolean(video);
   const has360 = Boolean(media.rotation360?.frames?.length);
   const [tab, setTab] = useState<Tab>("photo");
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -33,15 +34,24 @@ export function MediaStage({ media, hotspots, alt }: Props) {
             <HotspotOverlay hotspots={hotspots} />
           </>
         )}
-        {tab === "video" && hasVideo && (
+        {tab === "video" && video?.kind === "file" && (
           <video
             ref={videoRef}
-            src={media.video!.src}
+            src={video.src}
             poster={media.poster}
             controls
             playsInline
             preload="metadata"
             className="h-full w-full bg-black"
+          />
+        )}
+        {tab === "video" && video?.kind === "youtube" && (
+          <iframe
+            src={`https://www.youtube.com/embed/${video.id}`}
+            title={alt}
+            className="h-full w-full bg-black"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           />
         )}
         {tab === "360" && has360 && <Carousel360 frames={media.rotation360!.frames} />}

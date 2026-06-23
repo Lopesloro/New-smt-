@@ -35,10 +35,14 @@ export interface Hotspot {
   text: string;
 }
 
+export type VideoSource =
+  | { kind: "file"; src: string }
+  | { kind: "youtube"; id: string };
+
 export interface MachineMedia {
   poster: string;
   gallery: string[];
-  video?: { kind: "file"; src: string };
+  video?: VideoSource;
   rotation360?: { frames: string[] };
 }
 
