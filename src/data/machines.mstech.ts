@@ -193,36 +193,6 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     featured: true,
   },
   {
-    slug: "mdpl-t",
-    name: "mDPL-T",
-    fullName: "mDPL-T Compact Twin Depanelist",
-    category: "bit-router",
-    subcategory: "off-line",
-    tagline: "Ultra-fast twin router with Moebius cutting mode.",
-    description:
-      "Compact off-line twin-table router engineered for ultra-fast cycle times. Operates in 1+1 single mode for sequential lanes, 2×2 dual mode for parallel processing, or Moebius mode for advanced cutting patterns. Dual ionizer keeps every panel clean.",
-    features: [
-      "Ultra-speed dual-table operation",
-      "1+1 single mode (sequential)",
-      "2×2 dual mode (parallel)",
-      "Moebius advanced cutting mode",
-      "Vision system standard",
-      "Dual ionizer system",
-    ],
-    options: ["ATC", "MES Interface", "Auto Scrap Picker", "Fixture ID Recognition", "Cutting Inspection", "Tool Verify"],
-    applications: ["Mobile", "Electronic parts"],
-    specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "Mobile, Electronic parts"}],
-    media: {
-      poster: "/machines/mdpl-t/poster.jpg",
-      gallery: ["/machines/mdpl-t/gallery/01.jpg", "/machines/mdpl-t/gallery/02.jpg"],
-      video: { kind: "file", src: "/machines/mdpl-t/video.mp4" },
-    },
-    hotspots: [
-      { x: 0.5, y: 0.5, title: "Moebius mode", text: "Advanced cutting pattern, exclusive to mDPL-T." },
-    ],
-    featured: true,
-  },
-  {
     slug: "ndpl-s",
     name: "nDPL-S",
     fullName: "nDPL-S Single Table Depanelist",
@@ -241,83 +211,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     },
     hotspots: [],
   },
-  {
-    slug: "cdpl-s",
-    name: "cDPL-S",
-    fullName: "cDPL-S Universal Off-Line Router · Checkmate",
-    category: "bit-router",
-    subcategory: "off-line",
-    tagline: "Jig-less universal router for low-volume, high-mix production.",
-    description:
-      "Powered by Checkmate technology, the cDPL-S is designed for the realities of contract manufacturing and prototyping: lots of changeovers, lots of variants, and a need to keep running costs low. Automatic pin placement, smart vision programming and a jig-less work surface make every changeover trivial.",
-    features: [
-      "Low-volume, high-mix capability",
-      "Auto pin place & return (Checkmate magnet pins)",
-      "Smart vision programming · image scan · edge detection · off-line programming",
-      "Active brush system",
-      "Smart bit mileage tracking",
-      "Auto table cleaning",
-      "Dual ionizer system",
-      "Jig-less — significantly lower running costs",
-    ],
-    options: ["ATC", "Bit Diameter Detection", "Auto Brush Change System", "Cutting Inspection", "MES Interface"],
-    applications: ["EMS", "Prototyping", "Job-shop"],
-    specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "EMS, Prototyping, Job-shop"}],
-    media: {
-      poster: "/machines/cdpl-s/poster.jpg",
-      gallery: ["/machines/cdpl-s/gallery/01.jpg"],
-    },
-    hotspots: [
-      { x: 0.45, y: 0.5, title: "Jig-less", text: "Magnet-pin tooling eliminates dedicated jigs." },
-    ],
-  },
 
   // ===== SAWING — IN-LINE ==================================================
-  {
-    slug: "idpl-sw",
-    name: "iDPL-SW",
-    fullName: "iDPL-SW In-Line Sawing Depanelist",
-    category: "sawing",
-    subcategory: "in-line",
-    tagline: "In-line single-table sawing for long, linear cut paths.",
-    description:
-      "Diamond-coated saw blade depaneling on an in-line single-table platform. Designed for PCBs with long, straight cut lines that would be inefficient on a router.",
-    features: ["Single table, in-line conveyor", "Diamond-coated saw blade", "Integrated dust collection"],
-    options: ["Vision System", "MES Interface"],
-    applications: ["Automotive", "Appliance"],
-    specs: [{"label": "Category", "value": "Sawing System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Automotive, Appliance"}],
-    media: {
-      poster: "/machines/idpl-sw/poster.png",
-      gallery: ["/machines/idpl-sw/gallery/01.png"],
-    },
-    hotspots: [],
-  },
-  {
-    slug: "idpl-tw",
-    name: "iDPL-TW",
-    fullName: "iDPL-TW Twin Table In-Line Sawing",
-    category: "sawing",
-    subcategory: "in-line",
-    tagline: "Twin-table in-line sawing with bidirectional head rotation.",
-    description:
-      "Twin-table in-line sawing system with 90° head rotation for both horizontal and vertical cuts. Dual dust removal keeps every cut clean and the vision system verifies fiducials before each pass.",
-    features: [
-      "Twin table for high throughput",
-      "Diamond-coated saw blade",
-      "Sawing head rotation 90° (bidirectional)",
-      "Dual dust removal",
-      "Vision system for fiducial check",
-      "Tooling ID recognition",
-    ],
-    options: ["MES Interface", "Auto Scrap Pickup"],
-    applications: ["Automotive", "Appliance"],
-    specs: [{"label": "Category", "value": "Sawing System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Automotive, Appliance"}],
-    media: {
-      poster: "/machines/idpl-tw/poster.jpg",
-      gallery: ["/machines/idpl-tw/gallery/01.jpg"],
-    },
-    hotspots: [],
-  },
 
   // ===== SAWING — OFF-LINE =================================================
   {
@@ -375,76 +270,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
   },
 
   // ===== LASER — OFF-LINE ==================================================
-  {
-    slug: "ls-nun-s",
-    name: "LS-NUN-S",
-    fullName: "LS-NUN-S Laser Depanelist",
-    category: "laser",
-    subcategory: "off-line",
-    tagline: "Single-table off-line laser depanelist.",
-    description:
-      "Single-table off-line laser depaneling system with multiple laser-source options and vision-guided precision. Built for substrates that don't tolerate mechanical contact.",
-    features: ["Single-table off-line operation", "Multiple laser-source options", "Advanced vision system"],
-    options: ["MES Interface", "Barcode Reader"],
-    applications: ["Mobile", "Semiconductor", "Medical"],
-    specs: [{"label": "Category", "value": "Laser System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "Mobile, Semiconductor, Medical"}],
-    media: {
-      poster: "/machines/ls-nun-s/poster.png",
-      gallery: ["/machines/ls-nun-s/gallery/01.png"],
-    },
-    hotspots: [],
-  },
-  {
-    slug: "ls-nun-t2",
-    name: "LS-NUN-T2",
-    fullName: "LS-NUN-T2 Dual Laser Depanelist",
-    category: "laser",
-    subcategory: "off-line",
-    tagline: "Dual-head laser depaneling, patent pending.",
-    description:
-      "Dual-table laser depaneling with multiple laser-source options, advanced vision and integrated barcode reading for end-to-end traceability. Patent pending for the dual-head laser configuration.",
-    features: [
-      "Twin / dual-table configuration",
-      "Multiple laser source options",
-      "Advanced vision integration",
-      "Barcode reader (traceability)",
-      "Flexible fixture types",
-    ],
-    options: ["MES Interface", "Multiple laser source kits"],
-    applications: ["Semiconductor", "Medical", "Mobile", "Automotive"],
-    specs: [{ label: "Patent status", value: "Patent pending (dual-head)" }],
-    media: {
-      poster: "/machines/ls-nun-t2/poster.png",
-      gallery: ["/machines/ls-nun-t2/gallery/01.png", "/machines/ls-nun-t2/gallery/02.png"],
-      video: { kind: "file", src: "/machines/ls-nun-t2/video.mp4" },
-    },
-    hotspots: [
-      { x: 0.45, y: 0.4, title: "Dual laser heads", text: "Two heads, parallel processing." },
-      { x: 0.6, y: 0.65, title: "Barcode reader", text: "Per-panel traceability built in." },
-    ],
-    featured: true,
-  },
 
   // ===== OTHERS / SUPPORT ==================================================
-  {
-    slug: "auto-tray",
-    name: "Auto Tray",
-    fullName: "Auto Tray Function",
-    category: "others",
-    subcategory: "support",
-    tagline: "Automatic tray handling for in-line router systems.",
-    description:
-      "Released in 2015, the Auto Tray Function eliminates manual tray handling on in-line routers. Trays are automatically placed and retrieved, reducing operator load and supporting continuous material flow.",
-    features: ["Automatic tray placement and removal", "Reduces manual handling", "Integrates with in-line routers"],
-    options: [],
-    applications: ["EMS", "Appliance"],
-    specs: [{ label: "Released", value: "2015" }],
-    media: {
-      poster: "/machines/auto-tray/poster.jpg",
-      gallery: ["/machines/auto-tray/gallery/01.jpg", "/machines/auto-tray/gallery/02.jpg", "/machines/auto-tray/gallery/03.jpg"],
-    },
-    hotspots: [],
-  },
   {
     slug: "bga-grinding",
     name: "eDPL-SG",
@@ -465,89 +292,6 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     hotspots: [],
   },
   {
-    slug: "tornado",
-    name: "Tornado",
-    fullName: "Tornado — Real-Time Self-Diagnosis Dust Collector",
-    category: "others",
-    subcategory: "support",
-    tagline: "Self-diagnosing dust collection across the depaneling cell.",
-    description:
-      "Standard 3 HP dust collector (5 HP optional) with real-time self-diagnosis. Integrated area-ionizing keeps panels static-free and protects sensitive components.",
-    features: ["Real-time self-diagnosis", "3 HP standard · 5 HP optional", "Area ionizing", "Dual ionizer (on select systems)"],
-    options: ["5 HP upgrade"],
-    applications: ["All depaneling lines"],
-    specs: [
-      { label: "Standard power", value: "3 HP" },
-      { label: "Optional power", value: "5 HP" },
-    ],
-    media: {
-      poster: "/machines/tornado/poster.jpg",
-      gallery: ["/machines/tornado/gallery/01.jpg", "/machines/tornado/gallery/02.jpg", "/machines/tornado/gallery/03.png"],
-    },
-    hotspots: [],
-  },
-  {
-    slug: "particle-inspection",
-    name: "Particle Inspection",
-    fullName: "Particle Inspection System",
-    category: "others",
-    subcategory: "support",
-    tagline: "Patented line-beam particle detection.",
-    description:
-      "Vision-based particle and contamination detection using patented line-beam technology. Designed for high-reliability manufacturing in semiconductor, automotive and medical applications.",
-    features: ["Line-beam detection (patented)", "Post-depaneling inspection", "Automatic contamination detection"],
-    options: ["MES Interface"],
-    applications: ["Semiconductor", "Automotive", "Medical"],
-    specs: [{ label: "Patent", value: "Particle detecting apparatus using line beam" }],
-    media: {
-      poster: "/machines/particle-inspection/poster.png",
-      gallery: ["/machines/particle-inspection/gallery/01.png"],
-      video: { kind: "file", src: "/machines/particle-inspection/video.mp4" },
-    },
-    hotspots: [
-      { x: 0.5, y: 0.45, title: "Line beam", text: "Patented line-beam scan detects sub-millimeter particles." },
-    ],
-    featured: true,
-  },
-  {
-    slug: "vision-inspection",
-    name: "Vision Inspection",
-    fullName: "Vision Inspection System",
-    category: "others",
-    subcategory: "support",
-    tagline: "Fiducial, edge and cutting inspection in one module.",
-    description:
-      "Integrated or stand-alone vision module for fiducial recognition, edge detection and cutting inspection. Available across most of our router and sawing systems.",
-    features: ["Fiducial mark recognition", "Edge detection", "Cutting inspection", "Available on most systems"],
-    options: ["MES Interface"],
-    applications: ["All depaneling lines"],
-    specs: [{"label": "Category", "value": "Others & Support"}, {"label": "Configuration", "value": "Support"}, {"label": "Applications", "value": "All depaneling lines"}],
-    media: {
-      poster: "/machines/vision-inspection/poster.jpg",
-      gallery: ["/machines/vision-inspection/gallery/01.jpg", "/machines/vision-inspection/gallery/02.jpg", "/machines/vision-inspection/gallery/03.jpg"],
-    },
-    hotspots: [],
-  },
-  {
-    slug: "leak-test",
-    name: "Leak Test",
-    fullName: "Leak Test System",
-    category: "others",
-    subcategory: "support",
-    tagline: "Sealing and integrity QA for potted PCBs.",
-    description:
-      "Quality-control system for testing PCB integrity and component sealing. Used in automotive ECUs and sealed-housing applications.",
-    features: ["Sealed-housing leak detection", "Integration with line monitoring"],
-    options: [],
-    applications: ["Automotive", "Appliance"],
-    specs: [{"label": "Category", "value": "Others & Support"}, {"label": "Configuration", "value": "Support"}, {"label": "Applications", "value": "Automotive, Appliance"}],
-    media: {
-      poster: "/machines/leak-test/poster.jpg",
-      gallery: ["/machines/leak-test/gallery/01.jpg"],
-    },
-    hotspots: [],
-  },
-  {
     slug: "lms",
     name: "LMS",
     fullName: "Line Monitoring System",
@@ -563,25 +307,6 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/lms/poster.jpg",
       gallery: ["/machines/lms/gallery/01.jpg"],
-    },
-    hotspots: [],
-  },
-  {
-    slug: "automobile-line",
-    name: "Automobile Assembly Line",
-    fullName: "Automobile Assembly Line (FA)",
-    category: "others",
-    subcategory: "support",
-    tagline: "Factory automation for automotive electronics.",
-    description:
-      "Custom factory automation engineered for automotive assembly lines. Our FA division designs end-to-end automation for body, ECU and component lines.",
-    features: ["Custom factory automation", "Automotive industry focused", "End-to-end engineering"],
-    options: [],
-    applications: ["Automotive"],
-    specs: [{"label": "Category", "value": "Others & Support"}, {"label": "Configuration", "value": "Support"}, {"label": "Applications", "value": "Automotive"}],
-    media: {
-      poster: "/machines/automobile-line/poster.jpg",
-      gallery: ["/machines/automobile-line/gallery/01.jpg", "/machines/automobile-line/gallery/02.jpg", "/machines/automobile-line/gallery/03.jpg"],
     },
     hotspots: [],
   },
