@@ -26,6 +26,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/idpl-d/poster.jpg",
       gallery: ["/machines/idpl-d/gallery/01.jpg", "/machines/idpl-d/gallery/02.jpg", "/machines/idpl-d/gallery/03.jpg"],
+    
+      video: { kind: "file", src: "/machines/idpl-d/video.mp4" },
     },
     hotspots: [
       { x: 0.28, y: 0.42, title: "Dual lane", text: "Two independent transfer lanes work in parallel." },
@@ -55,6 +57,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/idpl-st/poster.jpg",
       gallery: ["/machines/idpl-st/gallery/01.jpg", "/machines/idpl-st/gallery/02.jpg", "/machines/idpl-st/gallery/03.jpg"],
+    
+      video: { kind: "file", src: "/machines/idpl-st/video.mp4" },
     },
     hotspots: [
       { x: 0.5, y: 0.45, title: "Single tray", text: "One tray cycle per pass — simple and reliable." },
@@ -83,6 +87,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/idpl-s/poster.jpg",
       gallery: ["/machines/idpl-s/gallery/01.jpg", "/machines/idpl-s/gallery/02.jpg"],
+    
+      video: { kind: "file", src: "/machines/idpl-s/video.mp4" },
     },
     hotspots: [
       { x: 0.42, y: 0.4, title: "Vision", text: "On-board camera recognizes fiducials and tool IDs." },
@@ -138,6 +144,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/idpl-u/poster.jpg",
       gallery: ["/machines/idpl-u/gallery/01.jpg", "/machines/idpl-u/gallery/02.jpg"],
+    
+      video: { kind: "file", src: "/machines/idpl-u/video.mp4" },
     },
     hotspots: [
       { x: 0.55, y: 0.6, title: "Edge-belt outlet", text: "Cut PCBs auto-feed the next station." },
@@ -184,6 +192,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/ndpl-t/poster.jpg",
       gallery: ["/machines/ndpl-t/gallery/01.jpg", "/machines/ndpl-t/gallery/02.jpg", "/machines/ndpl-t/gallery/03.jpg"],
+    
+      video: { kind: "file", src: "/machines/ndpl-t/video.mp4" },
     },
     hotspots: [
       { x: 0.3, y: 0.5, title: "Twin tables", text: "Load one while the other routes — zero idle time." },
@@ -208,6 +218,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/ndpl-s/poster.jpg",
       gallery: ["/machines/ndpl-s/gallery/01.jpg", "/machines/ndpl-s/gallery/02.jpg", "/machines/ndpl-s/gallery/03.jpg"],
+    
+      video: { kind: "file", src: "/machines/ndpl-s/video.mp4" },
     },
     hotspots: [],
   },
@@ -231,6 +243,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/ndpl-sw/poster.jpg",
       gallery: ["/machines/ndpl-sw/gallery/01.jpg", "/machines/ndpl-sw/gallery/02.jpg", "/machines/ndpl-sw/gallery/03.jpg"],
+    
+      video: { kind: "file", src: "/machines/ndpl-sw/video.mp4" },
     },
     hotspots: [],
   },
@@ -261,6 +275,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/ndpl-tw/poster.jpg",
       gallery: ["/machines/ndpl-tw/gallery/01.jpg", "/machines/ndpl-tw/gallery/02.jpg", "/machines/ndpl-tw/gallery/03.jpg"],
+    
+      video: { kind: "file", src: "/machines/ndpl-tw/video.mp4" },
     },
     hotspots: [
       { x: 0.4, y: 0.45, title: "Dual-side dust", text: "Simultaneous upper + lower extraction." },
@@ -307,6 +323,8 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     media: {
       poster: "/machines/lms/poster.jpg",
       gallery: ["/machines/lms/gallery/01.jpg"],
+    
+      video: { kind: "file", src: "/machines/lms/video.mp4" },
     },
     hotspots: [],
   },
