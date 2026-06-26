@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowRight, ChevronDown, Cpu, ScanLine, Layers, Boxes } from "lucide-react";
@@ -16,6 +17,35 @@ const pillars = [
 ];
 
 export default function Home() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const logoRef = useRef<HTMLImageElement>(null);
+
+  // Logo grows in sync with the hero video: small at the start, then it scales
+  // up to full size as the camera rises near the end. Repeats every loop.
+  useEffect(() => {
+    const v = videoRef.current;
+    const logo = logoRef.current;
+    if (!v || !logo) return;
+
+    const SMALL = 0.2; // starting size as a fraction of full
+    let raf = 0;
+
+    const tick = () => {
+      const d = v.duration || 25;
+      const t = v.currentTime;
+      const start = d * 0.65; // begin growing here (camera starts rising)
+      const end = d * 0.97; // full size just before the loop restarts
+      let p = (t - start) / (end - start);
+      p = Math.max(0, Math.min(1, p));
+      const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+      const scale = SMALL + (1 - SMALL) * eased;
+      logo.style.transform = `scale(${scale})`;
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, []);
+
   return (
     <div>
       <Helmet>
@@ -49,6 +79,7 @@ export default function Home() {
       {/* Hero — full-screen video filling the whole viewport */}
       <section className="relative h-screen w-full overflow-hidden bg-black">
         <video
+          ref={videoRef}
           src="/videos/overview.mp4"
           autoPlay
           loop
@@ -58,15 +89,17 @@ export default function Home() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        {/* Logo — top, centered, large, no background */}
+        {/* Logo — top, centered; grows with the video, stays clear of machines */}
         <Link
           to="/"
           aria-label="SMT Solutions — Home"
-          className="absolute left-1/2 top-10 -translate-x-1/2"
+          className="absolute left-1/2 top-6 -translate-x-1/2"
         >
           <img
+            ref={logoRef}
             src="/brand/smt-solutions.png"
             alt="SMT Solutions"
+            style={{ transformOrigin: "center top", transform: "scale(0.2)" }}
             className="h-auto w-[min(860px,82vw)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]"
           />
         </Link>
