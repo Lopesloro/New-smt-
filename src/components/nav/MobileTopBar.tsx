@@ -1,12 +1,26 @@
 import { Menu } from "lucide-react";
 import { Logo } from "@/components/brand/Logo";
 import { useUI } from "@/stores/ui";
+import { cn } from "@/lib/utils";
 
-export function MobileTopBar() {
+interface MobileTopBarProps {
+  /** on Home the bar floats (fixed) over the hero so the video stays full-screen */
+  home?: boolean;
+  /** when true (Home, still over the hero) the bar slides up out of view */
+  hidden?: boolean;
+}
+
+export function MobileTopBar({ home = false, hidden = false }: MobileTopBarProps) {
   const openDrawer = useUI((s) => s.openDrawer);
 
   return (
-    <header className="lg:hidden sticky top-0 z-30 flex h-16 items-center justify-between border-b border-[var(--border-c)] bg-[var(--surface-1)] px-4">
+    <header
+      className={cn(
+        "lg:hidden top-0 left-0 right-0 z-30 flex h-16 items-center justify-between border-b border-[var(--border-c)] bg-[var(--surface-1)] px-4",
+        home ? "fixed transition-transform duration-300 ease-smt-out" : "sticky",
+        home && hidden && "-translate-y-full",
+      )}
+    >
       <Logo variant="full" className="!h-10" />
       <button
         onClick={openDrawer}

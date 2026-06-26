@@ -6,6 +6,8 @@ import { getCategory } from "@/data/categories";
 import { MediaStage } from "@/components/machine/MediaStage";
 import { Gallery } from "@/components/machine/Gallery";
 import { SpecsTable } from "@/components/machine/SpecsTable";
+import { Reveal } from "@/components/site/Reveal";
+import { Play } from "lucide-react";
 import NotFound from "@/pages/NotFound";
 
 export default function MachineDetail() {
@@ -176,25 +178,31 @@ export default function MachineDetail() {
               Related machines
             </h2>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {related.map((m) => (
-                <Link
-                  key={m.slug}
-                  to={`/catalog/${cat.slug}/${m.slug}`}
-                  className="group overflow-hidden rounded-lg border border-[var(--border-c)] bg-[var(--surface-1)] transition-colors hover:border-[var(--brand-lime)]"
-                >
-                  <div className="aspect-[4/3] overflow-hidden bg-[var(--surface-3)]">
-                    <img
-                      src={m.media.poster}
-                      alt={m.fullName}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-display text-lg uppercase tracking-tight text-[var(--brand-green)]">{m.name}</h3>
-                    <p className="mt-1 text-sm text-[var(--text-1)]">{m.tagline}</p>
-                  </div>
-                </Link>
+              {related.map((m, i) => (
+                <Reveal key={m.slug} index={i} className="h-full">
+                  <Link
+                    to={`/catalog/${cat.slug}/${m.slug}`}
+                    className="group flex h-full flex-col overflow-hidden rounded-lg border border-[var(--border-c)] bg-[var(--surface-1)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--brand-lime)] hover:shadow-[0_12px_30px_-12px_rgba(0,71,48,0.25)]"
+                  >
+                    <div className="relative aspect-[4/3] overflow-hidden bg-[var(--surface-3)]">
+                      <img
+                        src={m.media.poster}
+                        alt={m.fullName}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      {m.media.video && (
+                        <span className="absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full bg-[var(--brand-green)]/90 px-2.5 py-1 font-mono-tech text-[10px] uppercase tracking-widest text-white backdrop-blur">
+                          <Play className="h-2.5 w-2.5 fill-current" /> Video
+                        </span>
+                      )}
+                    </div>
+                    <div className="p-5">
+                      <h3 className="font-display text-lg uppercase tracking-tight text-[var(--brand-green)]">{m.name}</h3>
+                      <p className="mt-1 text-sm text-[var(--text-1)]">{m.tagline}</p>
+                    </div>
+                  </Link>
+                </Reveal>
               ))}
             </div>
           </div>

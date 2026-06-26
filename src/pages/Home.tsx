@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowRight, Cpu, ScanLine, Layers, Boxes } from "lucide-react";
+import { ArrowRight, ChevronDown, Cpu, ScanLine, Layers, Boxes } from "lucide-react";
+import { motion } from "framer-motion";
 import { smtsStats } from "@/data/company";
+import { Reveal } from "@/components/site/Reveal";
+import { CountUp } from "@/components/site/CountUp";
 
 const capabilities = ["Placement", "Printing", "Inspection", "Depaneling", "Reflow", "Marking", "Handling"];
 
@@ -43,7 +46,7 @@ export default function Home() {
         </script>
       </Helmet>
 
-      {/* Hero — full-screen video, nothing on top */}
+      {/* Hero — full-screen video filling the whole viewport */}
       <section className="relative h-screen w-full overflow-hidden bg-black">
         <video
           src="/videos/overview.mp4"
@@ -52,69 +55,97 @@ export default function Home() {
           muted
           playsInline
           preload="auto"
-          className="absolute inset-0 h-full w-full object-contain"
+          className="absolute inset-0 h-full w-full object-cover"
         />
+
+        {/* Logo — top, centered, large, no background */}
+        <Link
+          to="/"
+          aria-label="SMT Solutions — Home"
+          className="absolute left-1/2 top-10 -translate-x-1/2"
+        >
+          <img
+            src="/brand/smt-solutions.png"
+            alt="SMT Solutions"
+            className="h-auto w-[min(860px,82vw)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]"
+          />
+        </Link>
+
+        {/* Scroll cue */}
+        <motion.div
+          className="pointer-events-none absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center text-white"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
+        >
+          <ChevronDown className="h-6 w-6 drop-shadow" />
+        </motion.div>
       </section>
 
+      {/* Everything below the hero clears the left sidebar that slides in on scroll */}
+      <div className="lg:pl-[280px]">
+
       {/* Pillars */}
-      <section className="py-24 lg:py-32">
+      <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
-          <h2 className="font-display text-2xl uppercase tracking-tight md:text-3xl">
-            What SMTS offers
-          </h2>
-          <p className="mt-3 max-w-2xl text-[var(--text-1)]">
-            End-to-end solutions for the electronics industry, with official representation of the
-            world's leading manufacturers.
-          </p>
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {pillars.map((p) => (
-              <div
-                key={p.title}
-                className="group rounded-lg border border-[var(--border-c)] bg-[var(--surface-1)] p-8 transition-colors hover:border-[var(--brand-lime)]"
-              >
-                <p.icon className="h-7 w-7 text-[var(--brand-green)] group-hover:text-[var(--brand-lime-dim)] transition-colors" />
-                <h3 className="mt-5 font-display text-lg uppercase tracking-wide">{p.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--text-1)]">{p.text}</p>
-              </div>
+          <Reveal>
+            <h2 className="font-display text-3xl uppercase tracking-tight md:text-4xl lg:text-5xl">
+              What SMTS offers
+            </h2>
+            <p className="mt-4 max-w-2xl text-lg text-[var(--text-1)]">
+              End-to-end solutions for the electronics industry, with official representation of the
+              world's leading manufacturers.
+            </p>
+          </Reveal>
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {pillars.map((p, i) => (
+              <Reveal key={p.title} index={i}>
+                <div className="group h-full rounded-lg border border-[var(--border-c)] bg-[var(--surface-1)] p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--brand-lime)] hover:shadow-[0_16px_40px_-16px_rgba(0,71,48,0.3)]">
+                  <p.icon className="h-8 w-8 text-[var(--brand-green)] transition-colors group-hover:text-[var(--brand-lime-dim)]" />
+                  <h3 className="mt-6 font-display text-lg uppercase tracking-wide">{p.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--text-1)]">{p.text}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
       {/* SMTS numbers */}
-      <section className="py-24 lg:py-32">
+      <section className="border-y border-[var(--border-c)] bg-[var(--surface-1)] py-24 lg:py-32">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           <div className="grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
-            {smtsStats.map((item) => (
-              <div key={item.l} className="text-center">
-                <div className="font-display text-3xl text-[var(--brand-green)] md:text-5xl">
-                  {item.n}
+            {smtsStats.map((item, i) => (
+              <Reveal key={item.l} index={i} className="text-center">
+                <div className="font-display text-4xl text-[var(--brand-green)] md:text-6xl">
+                  <CountUp value={String(item.n)} />
                 </div>
-                <div className="mt-2 text-xs uppercase tracking-widest text-[var(--text-2)]">
+                <div className="mt-3 text-xs uppercase tracking-widest text-[var(--text-2)]">
                   {item.l}
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
 
           {/* Capabilities */}
-          <div className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
-            {capabilities.map((c) => (
-              <span
-                key={c}
-                className="font-display text-lg uppercase tracking-wide text-[var(--text-2)]"
-              >
-                {c}
-              </span>
-            ))}
-          </div>
+          <Reveal>
+            <div className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+              {capabilities.map((c) => (
+                <span
+                  key={c}
+                  className="font-display text-lg uppercase tracking-wide text-[var(--text-2)] transition-colors hover:text-[var(--brand-green)]"
+                >
+                  {c}
+                </span>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="pb-24">
+      <section className="py-24">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
-          <div className="rounded-xl bg-[var(--brand-green)] px-8 py-12 text-white md:px-16 md:py-16">
+          <Reveal className="rounded-xl bg-[var(--brand-green)] px-8 py-12 text-white md:px-16 md:py-16">
             <h3 className="font-display text-2xl uppercase tracking-tight md:text-4xl">
               Building a production line?
             </h3>
@@ -127,9 +158,10 @@ export default function Home() {
             >
               Talk to SMTS <ArrowRight className="h-4 w-4" />
             </Link>
-          </div>
+          </Reveal>
         </div>
       </section>
+      </div>
     </div>
   );
 }

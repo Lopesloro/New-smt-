@@ -5,14 +5,22 @@ import { navItems, isNavGroup } from "@/data/nav";
 import { useUI } from "@/stores/ui";
 import { cn } from "@/lib/utils";
 
-export function Sidebar() {
+interface SidebarProps {
+  /** when true the sidebar slides off-screen to the left (used on the Home hero) */
+  hidden?: boolean;
+}
+
+export function Sidebar({ hidden = false }: SidebarProps) {
   const expanded = useUI((s) => s.expanded);
   const toggleExpanded = useUI((s) => s.toggleExpanded);
   const location = useLocation();
 
   return (
     <aside
-      className="hidden lg:flex fixed left-0 top-0 z-30 h-screen w-[280px] flex-col border-r border-[var(--border-c)] bg-[var(--surface-1)]"
+      className={cn(
+        "hidden lg:flex fixed left-0 top-0 z-30 h-screen w-[280px] flex-col border-r border-[var(--border-c)] bg-[var(--surface-1)] transition-transform duration-500 ease-smt-out",
+        hidden && "-translate-x-full",
+      )}
       aria-label="Primary navigation"
     >
       {/* Brand */}

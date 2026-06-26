@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Search } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { MachineCard } from "@/components/site/MachineCard";
+import { Reveal } from "@/components/site/Reveal";
 import { categories } from "@/data/categories";
 import { machines, getMachinesByCategory } from "@/data/machines";
 
@@ -87,8 +88,10 @@ export default function Catalog() {
                   </Link>
                 </div>
                 <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  {list.map((m) => (
-                    <MachineCard key={m.slug} machine={m} categorySlug={cat.slug} />
+                  {list.map((m, i) => (
+                    <Reveal key={m.slug} index={Math.min(i, 5)} className="h-full">
+                      <MachineCard machine={m} categorySlug={cat.slug} />
+                    </Reveal>
                   ))}
                 </div>
               </div>
