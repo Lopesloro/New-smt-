@@ -57,7 +57,7 @@ export default function MachineDetail() {
         <div className="mx-auto max-w-[1280px] px-6 py-14 lg:px-12 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-[1.4fr,1fr] lg:gap-14">
             <div>
-              <MediaStage media={machine.media} hotspots={machine.hotspots} alt={machine.fullName} />
+              <MediaStage media={machine.media} hotspots={machine.hotspots} alt={machine.fullName} allowVideo={machine.category !== "software"} />
             </div>
 
             <div>

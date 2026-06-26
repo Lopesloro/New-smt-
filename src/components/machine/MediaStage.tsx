@@ -7,11 +7,13 @@ interface Props {
   media: MachineMedia;
   hotspots: Hotspot[];
   alt: string;
+  /** when false, the Video tab is not shown at all (e.g. software products) */
+  allowVideo?: boolean;
 }
 
 type Tab = "photo" | "video";
 
-export function MediaStage({ media, hotspots, alt }: Props) {
+export function MediaStage({ media, hotspots, alt, allowVideo = true }: Props) {
   const video = media.video;
   const hasVideo = Boolean(video);
   const [tab, setTab] = useState<Tab>("photo");
@@ -19,7 +21,9 @@ export function MediaStage({ media, hotspots, alt }: Props) {
 
   const tabs: { id: Tab; label: string; icon: typeof ImageIcon; enabled: boolean }[] = [
     { id: "photo", label: "Photo", icon: ImageIcon, enabled: true },
-    { id: "video", label: "Video", icon: Play, enabled: hasVideo },
+    ...(allowVideo
+      ? [{ id: "video" as Tab, label: "Video", icon: Play, enabled: hasVideo }]
+      : []),
   ];
 
   return (

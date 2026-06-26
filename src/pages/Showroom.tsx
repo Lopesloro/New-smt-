@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
@@ -10,6 +10,8 @@ export default function Showroom() {
   const all = machines;
   const [idx, setIdx] = useState(0);
   const machine = all[idx];
+  const stageRef = useRef<HTMLElement>(null);
+  const didMount = useRef(false);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -19,6 +21,16 @@ export default function Showroom() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [all.length]);
+
+  // When a machine is selected, scroll up to the stage so the client sees it
+  // without scrolling manually. Skip the very first render (avoids a jump on load).
+  useEffect(() => {
+    if (!didMount.current) {
+      didMount.current = true;
+      return;
+    }
+    stageRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [idx]);
 
   if (!machine) return null;
 
@@ -56,11 +68,11 @@ export default function Showroom() {
       </div>
 
       {/* Stage */}
-      <section className="border-b border-[var(--border-c)]">
+      <section ref={stageRef} className="scroll-mt-20 border-b border-[var(--border-c)]">
         <div className="mx-auto max-w-[1280px] px-6 py-10 lg:px-12 lg:py-16">
           <div className="grid gap-10 lg:grid-cols-[1.5fr,1fr] lg:gap-14">
             <div className="relative">
-              <MediaStage media={machine.media} hotspots={machine.hotspots} alt={machine.fullName} />
+              <MediaStage media={machine.media} hotspots={machine.hotspots} alt={machine.fullName} allowVideo={machine.category !== "software"} />
 
               <div className="mt-6 flex items-center justify-between">
                 <button

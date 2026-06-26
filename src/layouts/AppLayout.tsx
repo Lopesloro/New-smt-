@@ -44,7 +44,13 @@ export function AppLayout() {
         <div className="min-h-[calc(100vh-4rem)] lg:min-h-screen">
           <Outlet />
         </div>
-        <Footer />
+        {isHome ? (
+          <div className="lg:pl-[280px]">
+            <Footer />
+          </div>
+        ) : (
+          <Footer />
+        )}
       </main>
       <WhatsAppButton />
     </div>

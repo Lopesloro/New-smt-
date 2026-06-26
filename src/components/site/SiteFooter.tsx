@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Logo } from "@/components/brand/Logo";
 
 export function Footer() {
@@ -19,20 +20,20 @@ export function Footer() {
           <div>
             <h4 className="font-display text-sm uppercase tracking-widest text-[var(--brand-lime)] mb-4">Catalog</h4>
             <ul className="space-y-2 text-sm text-white/80">
-              <li><a href="/catalog/surface-mounters" className="hover:text-white">Surface Mounters</a></li>
-              <li><a href="/catalog/printers" className="hover:text-white">Printers</a></li>
-              <li><a href="/catalog/inspection" className="hover:text-white">Inspection</a></li>
-              <li><a href="/catalog/software" className="hover:text-white">Software</a></li>
+              <li><Link to="/catalog/surface-mounters" className="hover:text-white">Surface Mounters</Link></li>
+              <li><Link to="/catalog/printers" className="hover:text-white">Printers</Link></li>
+              <li><Link to="/catalog/inspection" className="hover:text-white">Inspection</Link></li>
+              <li><Link to="/catalog/software" className="hover:text-white">Software</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-display text-sm uppercase tracking-widest text-[var(--brand-lime)] mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-white/80">
-              <li><a href="/about" className="hover:text-white">About SMTS</a></li>
-              <li><a href="/showroom" className="hover:text-white">Showroom</a></li>
-              <li><a href="/resources" className="hover:text-white">Resources</a></li>
-              <li><a href="/contact" className="hover:text-white">Contact</a></li>
+              <li><Link to="/about" className="hover:text-white">About SMTS</Link></li>
+              <li><Link to="/showroom" className="hover:text-white">Showroom</Link></li>
+              <li><Link to="/resources" className="hover:text-white">Resources</Link></li>
+              <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
             </ul>
           </div>
 
