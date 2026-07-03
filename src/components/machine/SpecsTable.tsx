@@ -42,7 +42,7 @@ export function SpecsTable({ specs, sections, machineName }: Props) {
           <table className="w-full">
             <tbody>
               {specs.map((s, i) => (
-                <tr key={s.label} className={i % 2 ? "bg-[rgba(152,215,20,0.16)]" : "bg-[var(--surface-1)]"}>
+                <tr key={s.label} className={i % 2 ? "bg-[rgba(152,215,20,0.38)]" : "bg-[var(--surface-1)]"}>
                   <th className="w-2/5 px-5 py-3 text-left font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">
                     {s.label}
                   </th>
@@ -79,7 +79,7 @@ export function SpecsTable({ specs, sections, machineName }: Props) {
                 )}
                 <tbody>
                   {sec.rows.map((row, ri) => (
-                    <tr key={ri} className={ri % 2 ? "bg-[rgba(152,215,20,0.16)]" : "bg-[var(--surface-1)]"}>
+                    <tr key={ri} className={ri % 2 ? "bg-[rgba(152,215,20,0.38)]" : "bg-[var(--surface-1)]"}>
                       {row.map((cell, ci) => (
                         <td
                           key={ci}
