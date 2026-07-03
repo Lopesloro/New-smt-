@@ -9,9 +9,11 @@ import { PageHero } from "@/components/site/PageHero";
 import { smts } from "@/data/company";
 import { categories } from "@/data/categories";
 
-// Web3Forms access key (free, no backend). Set VITE_WEB3FORMS_KEY in the
-// deploy environment; falls back to a placeholder for local dev.
-const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || "";
+// Web3Forms access key (free, no backend). This is a PUBLIC key — safe in
+// client-side code — and delivers submissions to comercial@smts.com.br.
+// Can be overridden per-environment via VITE_WEB3FORMS_KEY.
+const WEB3FORMS_KEY =
+  import.meta.env.VITE_WEB3FORMS_KEY || "065d72ff-34a7-42f2-99d8-04adc420e5e9";
 
 const schema = z.object({
   name: z.string().min(2, "Tell us your name."),
@@ -96,10 +98,10 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact · SMT Solutions (SMTS) — Campinas-SP</title>
+        <title>Contact · SMT Solutions (SMTS) — Jaguariúna-SP</title>
         <meta
           name="description"
-          content="Talk to our team. SMTS is based in Campinas-SP and serves Brazil & South America for electronic assembly, automation and testing."
+          content="Talk to our team. SMTS is based in Jaguariúna-SP and serves Brazil & South America for electronic assembly, automation and testing."
         />
       </Helmet>
 
@@ -163,6 +165,9 @@ export default function Contact() {
                 <Field label="Interest *" error={errors.interest?.message}>
                   <select {...register("interest")} className="input" defaultValue={presetInterest}>
                     <option value="" disabled>Select…</option>
+                    {presetInterest && !categories.some((c) => c.name === presetInterest) && (
+                      <option value={presetInterest}>{presetInterest}</option>
+                    )}
                     {categories.map((c) => (
                       <option key={c.id} value={c.name}>{c.name}</option>
                     ))}
@@ -201,17 +206,13 @@ export default function Contact() {
               <div className="mt-8 space-y-6">
                 <Info icon={MapPin} title="Address">
                   {smts.address.street}<br />
-                  {smts.address.district}<br />
-                  {smts.address.city} — {smts.address.state}, {smts.address.zip}<br />
-                  {smts.address.country}
+                  {smts.address.complement}<br />
+                  {smts.address.district} · {smts.address.city} — {smts.address.state}<br />
+                  CEP {smts.address.zip} · {smts.address.country}
                 </Info>
                 <Info icon={Phone} title="Phone">
                   <a href={`tel:${smts.phone.replace(/[^+\d]/g, "")}`} className="hover:text-[var(--brand-green)]">
                     {smts.phone}
-                  </a>
-                  <br />
-                  <a href={`tel:${smts.mobile.replace(/[^+\d]/g, "")}`} className="hover:text-[var(--brand-green)]">
-                    {smts.mobile} (mobile)
                   </a>
                 </Info>
                 <Info icon={Mail} title="Email">
@@ -245,8 +246,8 @@ export default function Contact() {
 
               <div className="mt-6 overflow-hidden rounded-lg border border-[var(--border-c)]">
                 <iframe
-                  title="SMTS location — Campinas-SP"
-                  src="https://www.google.com/maps?q=Campinas%20SP%20Brazil&output=embed"
+                  title="SMTS location — Jaguariúna-SP"
+                  src="https://www.google.com/maps?q=Rua%20C%C3%A2ndido%20Bueno%2C%201299%20-%20Centro%2C%20Jaguari%C3%BAna%20-%20SP%2C%2013910-033&output=embed"
                   className="h-56 w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

@@ -1,5 +1,5 @@
 // SMTS — SMT Solutions
-// Brazilian company (Campinas-SP) that represents and distributes electronic
+// Brazilian company (Jaguariúna-SP) that represents and distributes electronic
 // assembly, automation and test equipment across South America.
 // Source: brand manual + LinkedIn (linkedin.com/company/smts).
 
@@ -9,24 +9,24 @@ export const smts = {
   founded: 2005,
   experienceYears: 20,
   region: "South America",
-  city: "Campinas",
+  city: "Jaguariúna",
   state: "SP",
   country: "Brazil",
   tagline: "Solutions for electronic assembly, automation and testing.",
   description:
     "SMTS provides products and services that meet customer needs in electronic assembly, general automation and testing. Backed by professionals with more than 20 years of experience in high technology and automotive electronics, it serves customers across Brazil and South America.",
   address: {
-    street: "Av. Dr. Jesuino Marcondes Machado, 2071",
-    district: "Chácara da Barra",
-    city: "Campinas",
+    street: "Rua Cândido Bueno, 1299",
+    complement: "Pav. 1, Sala 8 · Condomínio Jaguar Center Plaza",
+    district: "Centro",
+    city: "Jaguariúna",
     state: "SP",
-    zip: "13090-723",
+    zip: "13910-033",
     country: "Brazil",
   },
-  phone: "+55 (19) 3294-8902",
-  mobile: "+55 (19) 8102-6737",
-  whatsapp: "5519981026737",
-  email: "ricardo@smts.com.br",
+  phone: "+55 (19) 99477-6662",
+  whatsapp: "5519994776662",
+  email: "comercial@smts.com.br",
   contact: { name: "Ricardo", role: "Administrator" },
   domain: "smts.com.br",
 };

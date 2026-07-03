@@ -43,18 +43,18 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-[var(--brand-lime)]" />
                 <span>
-                  Av. Dr. Jesuino Marcondes Machado, 2071<br />
-                  Chácara da Barra · Campinas-SP<br />
-                  CEP 13090-723
+                  Rua Cândido Bueno, 1299 · Pav. 1, Sala 8<br />
+                  Cond. Jaguar Center Plaza · Centro · Jaguariúna-SP<br />
+                  CEP 13910-033
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 flex-shrink-0 text-[var(--brand-lime)]" />
-                <a href="tel:+551932948902" className="hover:text-white">+55 (19) 3294-8902</a>
+                <a href="tel:+5519994776662" className="hover:text-white">+55 (19) 99477-6662</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 flex-shrink-0 text-[var(--brand-lime)]" />
-                <a href="mailto:ricardo@smts.com.br" className="hover:text-white">ricardo@smts.com.br</a>
+                <a href="mailto:comercial@smts.com.br" className="hover:text-white">comercial@smts.com.br</a>
               </li>
             </ul>
           </div>
@@ -62,7 +62,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
           <span>© {new Date().getFullYear()} SMT Solutions (SMTS) · All rights reserved.</span>
-          <span>Campinas-SP · Brazil</span>
+          <span>Jaguariúna-SP · Brazil</span>
         </div>
       </div>
     </footer>

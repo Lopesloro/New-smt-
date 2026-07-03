@@ -19,7 +19,7 @@ export default function About() {
         <title>About · SMT Solutions (SMTS)</title>
         <meta
           name="description"
-          content="SMTS is a Campinas-based company, founded in 2005, providing equipment and services for electronic assembly, automation and testing, representing world-leading manufacturers across South America."
+          content="SMTS is a Jaguariúna-based company, founded in 2005, providing equipment and services for electronic assembly, automation and testing, representing world-leading manufacturers across South America."
         />
       </Helmet>
 

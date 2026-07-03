@@ -90,7 +90,7 @@ export function Sidebar({ hidden = false }: SidebarProps) {
         <div className="mt-1 text-sm font-medium text-[var(--text-1)]">EN</div>
         <div className="mt-4 text-[11px] leading-relaxed text-[var(--text-2)]">
           © {new Date().getFullYear()} SMT Solutions<br />
-          Campinas-SP · Brazil
+          Jaguariúna-SP · Brazil
         </div>
       </div>
     </aside>
