@@ -23,6 +23,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     options: ["ATC (Auto Tool Change)", "MES Interface", "Auto Scrap Picker", "Fixture ID Recognition", "Cutting Inspection"],
     applications: ["Mobile", "Automotive", "EMS", "Appliance"],
     specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Mobile, Automotive, EMS, Appliance"}],
+    specSections: [{"title": "Technical data", "headers": ["Specification", "Value"], "rows": [["Line type", "In-line"], ["Configuration", "Dual station · dual lane · 4 spindles (2× AWA dual head)"], ["Max panel size", "Up to 350 × 400 mm"], ["Router type", "Bit (mechanical) router"], ["Spindle motor", "Sycotec 250 W (standard) · 500 W (option)"], ["Vision system", "KEYENCE SR-X100W (fiducial recognition)"], ["Cutting inspection", "Cutting-surface inspection (option)"], ["Tool change", "ATC — Auto Tool Change (option)"]]}],
     media: {
       poster: "/machines/idpl-d/poster.jpg",
       gallery: ["/machines/idpl-d/gallery/01.jpg", "/machines/idpl-d/gallery/02.jpg", "/machines/idpl-d/gallery/03.jpg"],
@@ -54,6 +55,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     options: ["MES Interface", "Vision System", "Fixture ID Recognition"],
     applications: ["Electronic parts", "EMS"],
     specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Electronic parts, EMS"}],
+    specSections: [{"title": "Technical data", "headers": ["Specification", "Value"], "rows": [["Line type", "In-line"], ["Configuration", "Single-tray feeding"], ["Max panel size", "Up to 350 × 400 mm"], ["Router type", "Bit (mechanical) router"], ["Spindle motor", "Sycotec 250 W (standard) · 500 W (option)"], ["Vision system", "KEYENCE SR-X100W (fiducial recognition)"], ["Cutting inspection", "Cutting-surface inspection (option)"], ["Tool change", "ATC — Auto Tool Change (option)"]]}],
     media: {
       poster: "/machines/idpl-st/poster.jpg",
       gallery: ["/machines/idpl-st/gallery/01.jpg", "/machines/idpl-st/gallery/02.jpg", "/machines/idpl-st/gallery/03.jpg"],
@@ -112,6 +114,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     options: ["Vision System", "Bit Broken Detection", "MES Interface", "Fixture ID Recognition"],
     applications: ["Appliance", "Electronic parts"],
     specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Appliance, Electronic parts"}],
+    specSections: [{"title": "Technical data", "headers": ["Specification", "Value"], "rows": [["Line type", "In-line"], ["Configuration", "Twin table"], ["Max panel size", "Up to 350 × 400 mm"], ["Router type", "Bit (mechanical) router"], ["Spindle motor", "Sycotec 250 W (standard) · 500 W (option)"], ["Vision system", "KEYENCE SR-X100W (fiducial recognition)"], ["Cutting inspection", "Cutting-surface inspection (option)"], ["Tool change", "ATC — Auto Tool Change (option)"]]}],
     media: {
       poster: "/machines/idpl-t/poster.jpg",
       gallery: ["/machines/idpl-t/gallery/01.jpg", "/machines/idpl-t/gallery/02.jpg", "/machines/idpl-t/gallery/03.png"],
@@ -141,6 +144,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     options: ["MES Interface", "Vision System"],
     applications: ["Mobile", "Automotive"],
     specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "In-line"}, {"label": "Applications", "value": "Mobile, Automotive"}],
+    specSections: [{"title": "Technical data", "headers": ["Specification", "Value"], "rows": [["Line type", "In-line"], ["Configuration", "Undercut routing"], ["Max panel size", "Up to 350 × 400 mm"], ["Router type", "Bit (mechanical) router"], ["Spindle motor", "Sycotec 250 W (standard) · 500 W (option)"], ["Vision system", "KEYENCE SR-X100W (fiducial recognition)"], ["Cutting inspection", "Cutting-surface inspection (option)"], ["Tool change", "ATC — Auto Tool Change (option)"]]}],
     media: {
       poster: "/machines/idpl-u/poster.jpg",
       gallery: ["/machines/idpl-u/gallery/01.jpg", "/machines/idpl-u/gallery/02.jpg"],
@@ -215,6 +219,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     options: ["Dual Spindle", "Vision System", "MES Interface"],
     applications: ["Electronic parts", "EMS"],
     specs: [{"label": "Category", "value": "Bit Router System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "Electronic parts, EMS"}],
+    specSections: [{"title": "Technical data", "headers": ["Specification", "Value"], "rows": [["Line type", "Off-line"], ["Configuration", "Single table"], ["Max panel size", "350 × 400 mm standard · 500 × 500 mm option"], ["Router type", "Bit (mechanical) router"], ["Spindle motor", "Sycotec 250 W (standard) · 500 W (option)"], ["Vision system", "KEYENCE SR-X100W (fiducial recognition)"], ["Cutting inspection", "Cutting-surface inspection (option)"], ["Tool change", "ATC — Auto Tool Change (option)"]]}],
     media: {
       poster: "/machines/ndpl-s/poster.jpg",
       gallery: ["/machines/ndpl-s/gallery/01.jpg", "/machines/ndpl-s/gallery/02.jpg", "/machines/ndpl-s/gallery/03.jpg"],
@@ -240,6 +245,7 @@ export const mstechMachines: Omit<Machine, "brand">[] = [
     options: ["Vision System", "Dust Collector upgrade"],
     applications: ["Automotive", "Electronic parts"],
     specs: [{"label": "Category", "value": "Sawing System"}, {"label": "Configuration", "value": "Off-line"}, {"label": "Applications", "value": "Automotive, Electronic parts"}],
+    specSections: [{"title": "Technical data", "headers": ["Specification", "Value"], "rows": [["Line type", "Off-line"], ["Configuration", "Single table (wide)"], ["Max panel size", "Up to 500 × 500 mm"], ["Router type", "Bit (mechanical) router"], ["Spindle motor", "Sycotec 250 W (standard) · 500 W (option)"], ["Vision system", "KEYENCE SR-X100W (fiducial recognition)"], ["Cutting inspection", "Cutting-surface inspection (option)"], ["Tool change", "ATC — Auto Tool Change (option)"]]}],
     media: {
       poster: "/machines/ndpl-sw/poster.jpg",
       gallery: ["/machines/ndpl-sw/gallery/01.jpg", "/machines/ndpl-sw/gallery/02.jpg", "/machines/ndpl-sw/gallery/03.jpg"],
