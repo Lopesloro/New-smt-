@@ -37,9 +37,9 @@ export const categories: Category[] = [
     slug: "inspection",
     brand: "yamaha",
     name: "Inspection Systems",
-    tagline: "SPI, AOI and X-ray quality assurance.",
+    tagline: "SPI and AOI quality assurance.",
     description:
-      "Solder-paste inspection (SPI), automated optical inspection (AOI) and X-ray inspection that close the quality loop across the line.",
+      "Solder-paste inspection (SPI) and automated optical inspection (AOI) that close the quality loop across the line.",
     hasSubcategories: false,
   },
   {

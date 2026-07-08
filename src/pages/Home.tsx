@@ -116,11 +116,11 @@ export default function Home() {
                 alt="Yamaha Motor"
                 className="h-auto w-[28vw] max-w-[300px] shrink-0"
               />
-              {/* slogan preto invertido para branco (fica legível sobre o vídeo) */}
+              {/* slogan já em branco com fundo transparente (só as letras) */}
               <img
                 src="/brand/revs-your-heart.png"
                 alt="Revs Your Heart"
-                className="h-auto w-[22vw] max-w-[230px] shrink-0 invert"
+                className="h-auto w-[22vw] max-w-[230px] shrink-0"
               />
             </span>
           </div>
