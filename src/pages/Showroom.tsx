@@ -129,45 +129,58 @@ export default function Showroom() {
         </div>
       </section>
 
-      {/* Thumbnails */}
+      {/* Equipment grouped by family — big left title per category */}
       <section>
         <div className="mx-auto max-w-[1280px] px-6 py-10 lg:px-12 lg:py-14">
-          <p className="font-mono-tech text-xs uppercase tracking-widest text-[var(--text-2)]">
-            All equipment
-          </p>
-          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-            {all.map((m, i) => {
-              const active = i === idx;
-              return (
-                <button
-                  key={m.slug}
-                  type="button"
-                  onClick={() => setIdx(i)}
-                  className={`group relative overflow-hidden rounded-md border text-left transition ${
-                    active
-                      ? "border-[var(--brand-lime)] ring-2 ring-[var(--brand-lime)]/40"
-                      : "border-[var(--border-c)] hover:border-[var(--brand-strong,var(--border-strong))]"
-                  }`}
-                >
-                  <div className="aspect-[4/3] overflow-hidden bg-[var(--surface-3)]">
-                    <img
-                      src={m.media.poster}
-                      alt={m.fullName}
-                      loading="lazy"
-                      className={`h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
-                        active ? "" : "opacity-90 group-hover:opacity-100"
-                      }`}
-                    />
-                  </div>
-                  <div className="p-2.5">
-                    <p className="font-display text-xs uppercase tracking-wide text-[var(--text-0)]">
-                      {m.name}
-                    </p>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
+          {categories
+            .map((c) => ({ c, list: all.filter((m) => m.category === c.id) }))
+            .filter((g) => g.list.length > 0)
+            .map(({ c, list }) => (
+              <div key={c.id} className="mb-12 last:mb-0">
+                {/* Big family title, left-aligned */}
+                <h2 className="border-b border-[var(--border-c)] pb-3 font-display text-2xl uppercase tracking-tight text-[var(--brand-green)] md:text-3xl lg:text-4xl">
+                  {c.name}
+                  <span className="ml-3 align-middle font-mono-tech text-xs tracking-widest text-[var(--text-2)]">
+                    {list.length}
+                  </span>
+                </h2>
+
+                <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+                  {list.map((m) => {
+                    const i = all.indexOf(m);
+                    const active = i === idx;
+                    return (
+                      <button
+                        key={m.slug}
+                        type="button"
+                        onClick={() => setIdx(i)}
+                        className={`group relative overflow-hidden rounded-md border text-left transition ${
+                          active
+                            ? "border-[var(--brand-lime)] ring-2 ring-[var(--brand-lime)]/40"
+                            : "border-[var(--border-c)] hover:border-[var(--brand-strong,var(--border-strong))]"
+                        }`}
+                      >
+                        <div className="aspect-[4/3] overflow-hidden bg-[var(--surface-3)]">
+                          <img
+                            src={m.media.poster}
+                            alt={m.fullName}
+                            loading="lazy"
+                            className={`h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
+                              active ? "" : "opacity-90 group-hover:opacity-100"
+                            }`}
+                          />
+                        </div>
+                        <div className="p-2.5">
+                          <p className="font-display text-xs uppercase tracking-wide text-[var(--text-0)]">
+                            {m.name}
+                          </p>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
         </div>
       </section>
     </>
