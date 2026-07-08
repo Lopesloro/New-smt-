@@ -105,18 +105,23 @@ export default function Home() {
             <img
               src="/brand/smt-solutions.png"
               alt="SMT Solutions"
-              className="h-auto w-[min(440px,42vw)]"
+              className="h-auto w-[42vw] max-w-[440px] shrink-0"
             />
             {/* "barra" separadora */}
             <span className="h-[clamp(40px,7vw,90px)] w-px shrink-0 bg-white/60" />
-            {/* Marca âncora — trocar por logo oficial da Yamaha quando chegar */}
-            <span className="flex flex-col leading-none text-white">
-              <span className="font-display uppercase tracking-wide text-[clamp(20px,4.6vw,48px)]">
-                Yamaha
-              </span>
-              <span className="mt-[0.4em] font-mono-tech uppercase tracking-[0.22em] text-white/85 text-[clamp(7px,1.2vw,12px)]">
-                1 Stop Smart Solution
-              </span>
+            {/* Marca âncora — logo oficial Yamaha Motor + Revs Your Heart */}
+            <span className="flex shrink-0 flex-col items-start gap-1">
+              <img
+                src="/brand/yamaha-motor.svg"
+                alt="Yamaha Motor"
+                className="h-auto w-[28vw] max-w-[300px] shrink-0"
+              />
+              {/* slogan preto invertido para branco (fica legível sobre o vídeo) */}
+              <img
+                src="/brand/revs-your-heart.png"
+                alt="Revs Your Heart"
+                className="h-auto w-[22vw] max-w-[230px] shrink-0 invert"
+              />
             </span>
           </div>
         </Link>
