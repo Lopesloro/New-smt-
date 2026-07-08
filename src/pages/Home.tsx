@@ -110,7 +110,7 @@ export default function Home() {
             {/* "barra" separadora */}
             <span className="h-[clamp(40px,7vw,90px)] w-px shrink-0 bg-white/60" />
             {/* Marca âncora — logo oficial Yamaha Motor + Revs Your Heart */}
-            <span className="flex shrink-0 flex-col items-start gap-1">
+            <span className="flex shrink-0 flex-col items-center gap-1">
               <img
                 src="/brand/yamaha-motor.svg"
                 alt="Yamaha Motor"
