@@ -61,9 +61,11 @@ export default function About() {
               </h2>
               <p className="mt-6 leading-relaxed text-[var(--text-1)]">
                 SMTS — SMT Solutions — is a Brazilian company based in {smts.city}-{smts.state},
-                specialized in equipment and services for the electronic assembly industry. We
-                represent world-leading manufacturers and provide full support, from specification
-                to after-sales, to customers across Brazil and South America.
+                specialized in equipment and services for the electronic assembly industry. We do
+                not resell just any equipment: we hold <strong className="text-[var(--brand-green)]">exclusive
+                representation agreements</strong> with world-leading manufacturers, and provide full
+                support — from specification to after-sales — to customers across Brazil and South
+                America.
               </p>
               <h3 className="mt-10 font-display text-lg uppercase tracking-tight">
                 Industries served
