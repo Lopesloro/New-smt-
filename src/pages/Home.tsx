@@ -18,7 +18,7 @@ const pillars = [
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const logoRef = useRef<HTMLImageElement>(null);
+  const logoRef = useRef<HTMLDivElement>(null);
 
   // Logo grows in sync with the hero video: small at the start, then it scales
   // up to full size as the camera rises near the end. Repeats every loop.
@@ -91,19 +91,34 @@ export default function Home() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        {/* Logo — top, centered; grows with the video, stays clear of machines */}
+        {/* Logo + anchor brand (Yamaha) — top, centered; grows with the video */}
         <Link
           to="/"
           aria-label="SMT Solutions — Home"
           className="absolute left-1/2 top-6 -translate-x-1/2"
         >
-          <img
+          <div
             ref={logoRef}
-            src="/brand/smt-solutions.png"
-            alt="SMT Solutions"
             style={{ transformOrigin: "center top", transform: "scale(0.2)" }}
-            className="h-auto w-[min(860px,82vw)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]"
-          />
+            className="flex items-center gap-[2.5vw] drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
+          >
+            <img
+              src="/brand/smt-solutions.png"
+              alt="SMT Solutions"
+              className="h-auto w-[min(440px,42vw)]"
+            />
+            {/* "barra" separadora */}
+            <span className="h-[clamp(40px,7vw,90px)] w-px shrink-0 bg-white/60" />
+            {/* Marca âncora — trocar por logo oficial da Yamaha quando chegar */}
+            <span className="flex flex-col leading-none text-white">
+              <span className="font-display uppercase tracking-wide text-[clamp(20px,4.6vw,48px)]">
+                Yamaha
+              </span>
+              <span className="mt-[0.4em] font-mono-tech uppercase tracking-[0.22em] text-white/85 text-[clamp(7px,1.2vw,12px)]">
+                1 Stop Smart Solution
+              </span>
+            </span>
+          </div>
         </Link>
 
         {/* Scroll cue */}
