@@ -10,10 +10,10 @@ import { CountUp } from "@/components/site/CountUp";
 const capabilities = ["Placement", "Printing", "Inspection", "Depaneling", "Reflow", "Marking", "Handling"];
 
 const pillars = [
-  { icon: Cpu, title: "Electronic assembly", text: "SMT equipment for printing, placement and reflow — from the world's leading manufacturers." },
-  { icon: ScanLine, title: "Inspection & testing", text: "Optical, X-ray and test systems for full quality assurance." },
-  { icon: Layers, title: "Automation", text: "Production lines, PCB handling, laser marking and traceability." },
-  { icon: Boxes, title: "Full support", text: "Specification, installation, training and technical service across Brazil and South America." },
+  { icon: Cpu, title: "Electronic assembly", text: "SMT equipment for printing, placement and reflow — from the world's leading manufacturers.", to: "/catalog/surface-mounters" },
+  { icon: ScanLine, title: "Inspection & testing", text: "Optical, X-ray and test systems for full quality assurance.", to: "/catalog/inspection" },
+  { icon: Layers, title: "Automation", text: "Production lines, PCB handling, laser marking and traceability.", to: "/catalog/conveyors" },
+  { icon: Boxes, title: "Full support", text: "Specification, installation, training and technical service across Brazil and South America.", to: "/contact" },
 ];
 
 export default function Home() {
@@ -135,11 +135,14 @@ export default function Home() {
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {pillars.map((p, i) => (
               <Reveal key={p.title} index={i}>
-                <div className="group h-full rounded-lg border border-[var(--border-c)] bg-[var(--surface-1)] p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--brand-lime)] hover:shadow-[0_16px_40px_-16px_rgba(0,71,48,0.3)]">
+                <Link
+                  to={p.to}
+                  className="group block h-full rounded-lg border border-[var(--border-c)] bg-[var(--surface-1)] p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--brand-lime)] hover:shadow-[0_16px_40px_-16px_rgba(0,71,48,0.3)]"
+                >
                   <p.icon className="h-8 w-8 text-[var(--brand-green)] transition-colors group-hover:text-[var(--brand-lime-dim)]" />
                   <h3 className="mt-6 font-display text-lg uppercase tracking-wide">{p.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[var(--text-1)]">{p.text}</p>
-                </div>
+                </Link>
               </Reveal>
             ))}
           </div>
