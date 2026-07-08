@@ -124,11 +124,12 @@ export default function Home() {
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
           <Reveal>
             <h2 className="font-display text-3xl uppercase tracking-tight md:text-4xl lg:text-5xl">
-              What SMTS offers
+              What does SMTS offer?
             </h2>
             <p className="mt-4 max-w-2xl text-lg text-[var(--text-1)]">
-              End-to-end solutions for the electronics industry, with official representation of the
-              world's leading manufacturers.
+              The complete solution to build your electronic assembly (SMT) line — placement,
+              solder-paste printing, inspection, reflow, depaneling and X-ray — from the world's
+              leading manufacturers.
             </p>
           </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

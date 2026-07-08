@@ -19,7 +19,7 @@ const schema = z.object({
   name: z.string().min(2, "Tell us your name."),
   email: z.string().email("A valid email is required."),
   company: z.string().optional(),
-  phone: z.string().optional(),
+  phone: z.string().min(8, "A phone number is required for contact."),
   interest: z.string().min(1, "Select an interest."),
   message: z.string().min(10, "A short message helps us prepare."),
   // honeypot — must stay empty
@@ -158,7 +158,7 @@ export default function Contact() {
                   <Field label="Company" error={errors.company?.message}>
                     <input type="text" {...register("company")} className="input" autoComplete="organization" />
                   </Field>
-                  <Field label="Phone" error={errors.phone?.message}>
+                  <Field label="Phone *" error={errors.phone?.message}>
                     <input type="tel" {...register("phone")} className="input" autoComplete="tel" />
                   </Field>
                 </div>
@@ -234,15 +234,6 @@ export default function Contact() {
                   Sales, installation, training and after-sales service for the represented equipment.
                 </p>
               </div>
-
-              <a
-                href={`https://wa.me/${smts.whatsapp}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#25D366] px-5 py-3 font-display text-sm uppercase tracking-widest text-white hover:opacity-90 transition"
-              >
-                <MessageSquare className="h-5 w-5" /> Chat on WhatsApp
-              </a>
 
               <div className="mt-6 overflow-hidden rounded-lg border border-[var(--border-c)]">
                 <iframe

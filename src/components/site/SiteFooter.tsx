@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Logo } from "@/components/brand/Logo";
+import { SeoKeywords } from "@/components/site/SeoKeywords";
 
 export function Footer() {
   return (
@@ -64,6 +65,8 @@ export function Footer() {
           <span>© {new Date().getFullYear()} SMT Solutions (SMTS) · All rights reserved.</span>
           <span>Jaguariúna-SP · Brazil</span>
         </div>
+
+        <SeoKeywords />
       </div>
     </footer>
   );

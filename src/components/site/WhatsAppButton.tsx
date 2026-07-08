@@ -2,7 +2,7 @@ import { smts } from "@/data/company";
 
 export function WhatsAppButton() {
   const href = `https://wa.me/${smts.whatsapp}?text=${encodeURIComponent(
-    "Hello SMTS, I'd like more information about your equipment.",
+    "Olá, time SMTS, gostaria de mais informações sobre os seus produtos.",
   )}`;
   return (
     <a
